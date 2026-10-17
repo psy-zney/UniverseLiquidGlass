@@ -26,6 +26,8 @@ try {
     Start-Sleep -Seconds 3
     & $Python (Join-Path $PSScriptRoot 'render.py') --profile $captureProfile
     if ($LASTEXITCODE -ne 0) { throw 'Video capture failed.' }
+    & $Python (Join-Path $PSScriptRoot 'edit.py')
+    if ($LASTEXITCODE -ne 0) { throw 'Event close-up edit failed.' }
 } finally {
     # Only this launcher-created, unique headless profile may be stopped.
     $matchesProfile=@(Get-CimInstance Win32_Process -Filter "Name='zen.exe'" | Where-Object {

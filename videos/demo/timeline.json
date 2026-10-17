@@ -59,7 +59,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 91,
+          "end_frame": 137,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -94,7 +124,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 175,
+          "end_frame": 221,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -129,7 +189,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 259,
+          "end_frame": 305,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -164,7 +254,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 343,
+          "end_frame": 389,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -199,7 +319,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 427,
+          "end_frame": 473,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -234,7 +384,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 511,
+          "end_frame": 557,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -269,7 +449,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 595,
+          "end_frame": 641,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -304,7 +514,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 679,
+          "end_frame": 725,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,
@@ -339,7 +579,37 @@
       "assets": [
         "native-zen"
       ],
-      "animations": [],
+      "animations": [
+        {
+          "target": "zen",
+          "action": "tracked_detail",
+          "start_frame": 763,
+          "end_frame": 809,
+          "params": {
+            "panel": [
+              805,
+              425,
+              710,
+              405
+            ],
+            "source_crop": [
+              0,
+              292,
+              150
+            ],
+            "track": "source vertical path",
+            "scale": 2.34,
+            "fade_progress": [
+              0.23,
+              0.32,
+              0.68,
+              0.77
+            ]
+          },
+          "narration_anchor": "source visible in sidebar",
+          "purpose": "Reveal source, halo and lensing details without hiding the browser"
+        }
+      ],
       "transition": "cut",
       "audio": {
         "voiceover_path": null,

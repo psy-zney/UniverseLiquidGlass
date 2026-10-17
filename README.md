@@ -1,117 +1,115 @@
 # Universe Liquid Glass
 
-Vũ trụ thu nhỏ cho **Zen Browser**: nền đen sâu, sao trắng lấp lánh, thiên thể đi ngang qua và tab **liquid glass** sáng rõ.
+A small universe for **Zen Browser**: deep black space, crisp twinkling stars, passing celestial objects and bright **liquid glass** tabs.
 
-[Tải bản cài đặt](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) · [Xem video demo](docs/media/theme-demo.mp4) · [English](docs/README.en.md)
+[Download](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) · [Video](#video-demo) · [Tiếng Việt](docs/README.vi.md)
 
 ## Video demo
 
-https://github.com/user-attachments/assets/b9ad681a-715a-4570-aad6-3a52f168c637
+https://github.com/user-attachments/assets/91497d1d-f244-4eb9-b1db-a82097c5d6c2
 
-*53,5 giây: đủ 9 sự kiện vũ trụ, chuyển tab sidebar, loading và Downloads. [Tải MP4](docs/media/theme-demo.mp4) · [Phụ đề tiếng Việt](docs/media/theme-demo.vi.srt).*
+*53.5 seconds of native Zen footage, with tracked **2.3× close-ups** for celestial events. Sidebar tab switches and everyday controls remain in the full-window view. [Download MP4](docs/media/theme-demo.mp4) · [Vietnamese subtitles](docs/media/theme-demo.vi.srt).*
 
-## Có gì bên trong?
+## Features
 
-- Các điểm sao rải bất quy tắc, nhấp nháy lệch nhịp; nền gần đen, không dùng tông tím.
-- **9 sự kiện:** sao chổi bay chéo, ngôi sao, hành tinh, sao lùn trắng, hố đen, sao neutron, tinh vân, sao xanh và thiên hà.
-- Ánh sáng cục bộ đi theo thiên thể, xuyên nhẹ qua tab kính. Hố đen có đĩa bồi tụ và mô phỏng bẻ cong ánh sao.
-- Hiệu ứng ở sidebar, thanh trên và viền luôn nằm sau nội dung/nút bấm, không chặn chuột.
-- Tab đang chọn có viền kính sáng; tab đang tải có chuyển động riêng.
-- Downloads rộng hơn, tên tệp dễ đọc; chỉnh tương phản ở Library, Spaces, History và popup chọn của trang web.
-- CSS + SVG nội bộ; không tải ảnh, font hay JavaScript từ Internet khi sử dụng theme.
+- **Deep black sky:** irregular white pinpoints, sharp cores and staggered twinkling, without a purple color scheme.
+- **Nine celestial events:** diagonal comet, star, planet, white dwarf, black hole, neutron star, nebula, blue star and spiral galaxy.
+- **Moving local light:** halos travel with each source and shine through translucent tabs. The black hole includes an accretion disc and simulated gravitational lensing.
+- **Cosmic browser frame:** events appear in the sidebar, top toolbar and exposed top edge in compact mode. Decorative layers stay behind controls and never capture clicks.
+- **Liquid glass tabs:** bright reflective borders, a clear active state and a moving loading highlight for the selected busy tab.
+- **Readable panels:** wider Downloads, wrapping filenames, explicit foreground/background pairs in Library, Spaces, History and native website select popups.
+- **Local assets:** CSS and embedded SVG; the installed theme does not fetch remote images, fonts or scripts.
 
-## Video sử dụng
+### What the video shows
 
-**[▶ Xem hoặc tải MP4 — 54 giây](https://github.com/psy-zney/UniverseLiquidGlass/raw/refs/heads/main/docs/media/theme-demo.mp4)**
-
-| Đoạn | Nội dung |
+| Time | Scene |
 | --- | --- |
-| 00:00 | Giao diện nền đen và tab kính |
-| 00:03–00:34 | Lần lượt 9 sự kiện, gồm hố đen, sao neutron và tinh vân |
-| 00:34–00:42 | Chuyển ba tab bằng sidebar |
-| 00:42–00:45 | Trạng thái loading |
-| 00:45–00:49 | Downloads |
-| 00:49–00:54 | Cách cài đặt |
+| 00:00 | Deep black interface and glass tabs |
+| 00:03–00:34 | All nine celestial events, with magnified details as each object passes |
+| 00:34–00:42 | Switching between three tabs in the sidebar |
+| 00:42–00:45 | The selected-tab loading state |
+| 00:45–00:49 | Readable Downloads panel |
+| 00:49–00:54 | Installation steps |
 
-Video quay giao diện Zen thật bằng profile riêng; các trang và tệp tải là dữ liệu demo. Thời gian từng sự kiện được dựng gọn để xem hết trong một video. Theme thực tế dùng chu kỳ sidebar **70 giây**, thanh trên **84 giây**.
+The video uses a dedicated Zen profile, local sample pages and synthetic download entries. Event timing is edited for a compact showcase; the installed sidebar loop takes **70 seconds**, and the top loop **84 seconds**. Magnified detail panels are part of the video edit, not overlays added to the theme.
 
 <details>
-<summary>Xem nhanh animation sidebar</summary>
+<summary>Quick animated sidebar preview</summary>
 
-![Animation sidebar](docs/media/sidebar-preview.gif)
+![Animated sidebar](docs/media/sidebar-preview.gif)
 
 </details>
 
-## Cài nhanh trên Windows
+## Quick installation — Windows
 
-1. Tải **UniverseLiquidGlass-v1.0.0.zip** ở [Releases](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) và giải nén.
-2. Nếu có nhiều profile: mở `about:profiles`, ghi lại **Root Directory / Thư mục gốc** của profile đang sử dụng.
-3. **Thoát hoàn toàn Zen.** Chạy `install.cmd` trong thư mục đã giải nén.
-4. Mở lại Zen, dùng giao diện **Dark** và sidebar tab dọc mở rộng.
+1. Download **UniverseLiquidGlass-v1.0.0.zip** from [Releases](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) and extract it.
+2. If you have multiple Zen profiles, open `about:profiles` and note the intended profile's **Root Directory**.
+3. **Close Zen completely**, then run `install.cmd` from the extracted folder.
+4. Reopen Zen with the **Dark** appearance and expanded vertical tabs.
 
-Bộ cài tự tìm profile khi chỉ có một profile. Nếu có nhiều profile, chạy trong PowerShell từ thư mục theme:
+The installer automatically selects a profile only when there is exactly one. For a specific profile, run this from the extracted folder:
 
 ```powershell
 .\install.cmd -ProfilePath "C:\path\to\your\Zen\profile"
 ```
 
-Kiểm tra trước, chưa thay đổi tệp:
+Preview the changes without writing files:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -ProfilePath "C:\path\to\your\Zen\profile" -WhatIf
 ```
 
-### Bộ cài thay đổi gì?
+### What the installer changes
 
-- Sao lưu `chrome/userChrome.css`, `chrome/userContent.css`, `user.js` và bản theme cũ nếu có, vào `.universe-liquid-glass-backups/<thời điểm>/` trong profile.
-- Đặt hai CSS của theme trong `chrome/UniverseLiquidGlass/`; thêm đúng một dòng `@import` vào mỗi CSS gốc. CSS riêng của bạn được giữ lại.
-- Thêm một khối có nhãn vào `user.js` để bật `toolkit.legacyUserProfileCustomizations.stylesheets`.
-- Không chạm vào bookmark, mật khẩu, tiện ích hay lịch sử. Không tự đóng Zen. Profile đang bị khóa sẽ được từ chối cài.
+- Backs up `chrome/userChrome.css`, `chrome/userContent.css`, `user.js` and the previous managed theme, if present, in `.universe-liquid-glass-backups/<timestamp>/` inside the profile.
+- Copies the theme into `chrome/UniverseLiquidGlass/` and adds one import to each entry CSS file. Your existing custom CSS is preserved.
+- Adds a labeled block to `user.js` enabling `toolkit.legacyUserProfileCustomizations.stylesheets`.
+- Rejects a locked profile. Bookmarks, passwords, extensions and history are not modified.
 
-Nếu đã có theme khác, quy tắc của theme đó có thể ghi đè giao diện này. Hãy sao lưu rồi tắt các import theme xung đột.
+Existing theme rules may override this theme. Back up your configuration and disable conflicting theme imports if the appearance differs from the demo.
 
-## Cài thủ công — Windows, macOS, Linux
+## Manual installation — Windows, macOS and Linux
 
-1. Mở `about:profiles` → mở **Root Directory** của profile dùng theme. Thoát Zen.
-2. Tạo thư mục `chrome/UniverseLiquidGlass/` bên trong profile; chép `theme/userChrome.css` và `theme/userContent.css` vào đó.
-3. Tạo hoặc sửa `chrome/userChrome.css`, đặt ở đầu tệp (sau `@charset` nếu có):
+1. Open `about:profiles` and find your profile's **Root Directory**. Close Zen.
+2. Create `chrome/UniverseLiquidGlass/` inside that profile and copy both files from `theme/` into it.
+3. Create or edit `chrome/userChrome.css`. Add this at the start, after `@charset` if present:
 
    ```css
    @import url("UniverseLiquidGlass/userChrome.css");
    ```
 
-4. Trong `chrome/userContent.css`, thêm tương tự:
+4. In `chrome/userContent.css`, add:
 
    ```css
    @import url("UniverseLiquidGlass/userContent.css");
    ```
 
-5. Trong `about:config`, đặt `toolkit.legacyUserProfileCustomizations.stylesheets` thành `true` rồi khởi động lại Zen.
+5. In `about:config`, set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`, then restart Zen.
 
-Đã kiểm tra trên **Zen 1.23.2b / Windows**. macOS/Linux có hướng dẫn thủ công nhưng chưa được kiểm tra trực tiếp. Đây là theme CSS cục bộ; repo này **chưa được gửi lên kho Zen Mods chính thức**.
+**Tested on Zen 1.23.2b / Windows.** Manual installation on macOS/Linux is documented but has not been tested directly. This is a local CSS theme; it has **not been submitted to the official Zen Mods store**.
 
-## Gỡ và khôi phục
+## Uninstall and restore
 
-Thoát Zen rồi chạy `uninstall.cmd`, hoặc:
+Close Zen, then run `uninstall.cmd`, or select the profile explicitly:
 
 ```powershell
 .\uninstall.cmd -ProfilePath "C:\path\to\your\Zen\profile"
 ```
 
-Bộ gỡ bỏ import và tệp do bộ cài quản lý, giữ CSS tùy chỉnh, sửa đổi thêm sau khi cài và các bản sao lưu. Tùy chọn bật CSS có thể vẫn được Zen giữ trong `prefs.js`; nó không nạp theme sau khi đã gỡ import.
+The uninstaller removes managed imports and theme files while preserving unrelated custom CSS, edits made after installation and backups. Zen may retain the CSS-enabled preference in `prefs.js`; it no longer loads this theme once the imports are removed.
 
-Nếu cài thủ công, tự xóa hai dòng import và thư mục `chrome/UniverseLiquidGlass/`. Muốn trở về chính xác cấu hình cũ, dùng các tệp trong thư mục sao lưu khi Zen đã đóng.
+For a manual installation, remove the two imports and `chrome/UniverseLiquidGlass/`. To restore the exact previous configuration, use the backed-up files while Zen is closed.
 
-## Tùy chỉnh và phát triển
+## Customize and build
 
 ```text
-theme/                  CSS sẵn dùng
-src/sidebar.css         Lớp sao và chuyển động sidebar
-src/cosmic_events.py     Thiên thể, ánh sáng và lịch sự kiện
-src/deep_space_assets.py Bầu trời và chi tiết SVG
-src/ui.css              Tab kính, thanh trên, Library và popup
-scripts/build.py        Tạo CSS bằng Python, không cần package ngoài
-videos/demo/            Timeline, trang demo và mã quay video
+theme/                   Ready-to-use CSS
+src/sidebar.css          Star layers and sidebar motion
+src/cosmic_events.py      Celestial objects, lighting and event schedule
+src/deep_space_assets.py  Star field and SVG details
+src/ui.css               Glass tabs, top bar, Library and popups
+scripts/build.py         Deterministic CSS generator, Python standard library only
+videos/demo/             Timeline, local demo pages, native recorder and video edit
 ```
 
 ```powershell
@@ -120,13 +118,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-install.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1
 ```
 
-Muốn tăng/giảm thời gian sự kiện: sửa `SCHEDULE` trong `src/cosmic_events.py`, rồi build lại. Muốn sửa độ sáng tab: chỉnh nền và viền `.tab-background` trong `src/ui.css`.
+Edit `SCHEDULE` in `src/cosmic_events.py` to change event timing, then rebuild. Adjust `.tab-background` surfaces and borders in `src/ui.css` to change glass brightness. See [video source](videos/demo/README.md) to reproduce the recording and tracked close-ups.
 
-## Lưu ý
+## Notes
 
-- Hố đen và ánh sáng là mô phỏng đồ họa; không phải mô phỏng vật lý đầy đủ.
-- CSS không thể tự suy ra độ tương phản của mọi website. Bản sửa xử lý các popup và bề mặt Zen đã kiểm tra; không ép toàn bộ trang web sang nền tối.
-- Compact mode vẫn hoạt động: khi thanh công cụ tự ẩn, sự kiện hiện trong phần viền trên còn lộ ra.
-- Backdrop blur và animation có thể tốn GPU. Giao diện của Zen có thể thay đổi selector khi cập nhật.
+- Black-hole lensing and illumination are graphical approximations, not a complete physical simulation.
+- Contrast fixes cover the tested Zen panels and native select popups. Arbitrary websites are not forced into a global color scheme.
+- Compact mode keeps its native behavior; when the toolbar is hidden, events appear in the remaining exposed top edge.
+- Blur and animation costs depend on your GPU. Zen updates may change the selectors used by this theme.
 
 MIT · [psy-zney](https://github.com/psy-zney)

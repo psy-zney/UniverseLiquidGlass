@@ -27,13 +27,13 @@
       "author": "psy-zney",
       "license": "MIT for project graphics and demo pages; Zen UI shown for product demonstration",
       "attribution": "Captured in Zen Browser 1.23.2b using a dedicated local profile",
-      "checked_on": "2026-10-17",
-      "original_path": "source/render.py",
+      "checked_on": "2026-10-18",
+      "original_path": "source/record.ps1",
       "local_path": "../../docs/media/theme-demo.mp4",
       "width": 1600,
       "height": 900,
       "crop_plan": "Full native window; sidebar 292 px",
-      "motion_plan": "Sample native CSS at 24 fps; click native tabs",
+      "motion_plan": "Native CSS footage with 2.3x tracked event detail panels; native tab clicks",
       "status": "ready"
     }
   ]

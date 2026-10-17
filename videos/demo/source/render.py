@@ -20,7 +20,7 @@ from cosmic_events import SCHEDULE,TOTAL
 parser=argparse.ArgumentParser()
 parser.add_argument('--profile',required=True,help='Exact isolated profile to permit capturing')
 parser.add_argument('--frames',type=int,help='Optional short preview render')
-parser.add_argument('--output',type=Path,default=REPO/'docs/media/theme-demo.mp4')
+parser.add_argument('--output',type=Path,default=VIDEO/'renders/native-original.mp4')
 args=parser.parse_args()
 import imageio_ffmpeg
 ffmpeg=imageio_ffmpeg.get_ffmpeg_exe()
