@@ -1,0 +1,26 @@
+name: Check theme and installer
+on:
+  push:
+  pull_request:
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild deterministic CSS
+        run: |
+          python scripts/build.py
+          git diff --exit-code -- theme/
+      - name: Exercise install, update and uninstall in a temporary profile
+        shell: powershell
+        run: ./scripts/test-install.ps1
+      - name: Build ZIP
+        shell: powershell
+        run: ./scripts/package.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UniverseLiquidGlass
+          path: dist/*.zip

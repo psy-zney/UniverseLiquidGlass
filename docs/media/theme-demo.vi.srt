@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:03,000
+Universe Liquid Glass — giao diện vũ trụ và tab kính
+
+2
+00:00:03,000 --> 00:00:06,500
+Sao chổi bay chéo với vệt bụi và quầng sáng
+
+3
+00:00:06,500 --> 00:00:10,000
+Ngôi sao hắt ánh sáng qua tab kính
+
+4
+00:00:10,000 --> 00:00:13,500
+Hành tinh có bề mặt và ánh sáng dịu
+
+5
+00:00:13,500 --> 00:00:17,000
+Sao lùn trắng — lõi sáng nhỏ, quầng sáng gọn
+
+6
+00:00:17,000 --> 00:00:20,500
+Hố đen — đĩa bồi tụ và mô phỏng bẻ cong ánh sao
+
+7
+00:00:20,500 --> 00:00:24,000
+Sao neutron — hai tia đối nhau và ánh sáng nhấp nháy
+
+8
+00:00:24,000 --> 00:00:27,500
+Tinh vân — các lớp bụi và mây nhẹ
+
+9
+00:00:27,500 --> 00:00:31,000
+Sao xanh — ánh xanh cục bộ trên nền đen
+
+10
+00:00:31,000 --> 00:00:34,500
+Thiên hà xoắn ốc lướt qua sidebar và viền trên
+
+11
+00:00:34,500 --> 00:00:37,000
+Chuyển sang tab Reading bằng sidebar
+
+12
+00:00:37,000 --> 00:00:39,500
+Chuyển sang tab Workspace bằng sidebar
+
+13
+00:00:39,500 --> 00:00:42,000
+Trở lại tab Overview
+
+14
+00:00:42,000 --> 00:00:45,000
+Tab đang tải có chuyển động riêng; kết thúc tải thì dừng
+
+15
+00:00:45,000 --> 00:00:48,500
+Downloads — tên tệp và trạng thái rõ trên nền tối
+
+16
+00:00:48,500 --> 00:00:53,500
+Tải ZIP → thoát Zen → chạy install.cmd → mở lại Zen

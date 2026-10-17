@@ -1,0 +1,16 @@
+- intro: 0–3s — Introduce the theme and sidebar
+- comet: 3–6.5s — Show Diagonal comet
+- star: 6.5–10s — Show Stellar light
+- planet: 10–13.5s — Show Quiet planetary pass
+- white_dwarf: 13.5–17s — Show White dwarf
+- hole: 17–20.5s — Show Black hole
+- neutron: 20.5–24s — Show Neutron star
+- nebula: 24–27.5s — Show Nebula
+- blue_star: 27.5–31s — Show Blue star
+- galaxy: 31–34.5s — Show Spiral galaxy
+- switch-reading: 34.5–37s — Switch to the Reading tab
+- switch-workspace: 37–39.5s — Switch to the Workspace tab
+- switch-overview: 39.5–42s — Switch back to the Overview tab
+- loading: 42–45s — Show the loading star only while the selected page is busy
+- downloads: 45–48.5s — Show readable download filenames and status
+- install: 48.5–53.5s — Explain install and restart in three short steps

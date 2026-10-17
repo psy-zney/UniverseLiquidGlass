@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "id": "native-zen",
+      "scene_ids": [
+        "intro",
+        "comet",
+        "star",
+        "planet",
+        "white_dwarf",
+        "hole",
+        "neutron",
+        "nebula",
+        "blue_star",
+        "galaxy",
+        "switch-reading",
+        "switch-workspace",
+        "switch-overview",
+        "loading",
+        "downloads",
+        "install"
+      ],
+      "role": "Actual Zen UI and local sample pages",
+      "type": "video",
+      "source_type": "original",
+      "source_page": "https://github.com/psy-zney/UniverseLiquidGlass",
+      "author": "psy-zney",
+      "license": "MIT for project graphics and demo pages; Zen UI shown for product demonstration",
+      "attribution": "Captured in Zen Browser 1.23.2b using a dedicated local profile",
+      "checked_on": "2026-10-17",
+      "original_path": "source/render.py",
+      "local_path": "../../docs/media/theme-demo.mp4",
+      "width": 1600,
+      "height": 900,
+      "crop_plan": "Full native window; sidebar 292 px",
+      "motion_plan": "Sample native CSS at 24 fps; click native tabs",
+      "status": "ready"
+    }
+  ]
+}

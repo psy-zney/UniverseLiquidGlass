@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+videos/demo/renders/
+*.log
+.DS_Store

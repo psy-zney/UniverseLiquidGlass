@@ -1,0 +1,37 @@
+/* Website content: pair native option foreground and background together. */
+@-moz-document url-prefix("http://"), url-prefix("https://") {
+  select option,
+  select optgroup {
+    color: #111827 !important;
+    background-color: #ffffff !important;
+    text-shadow: none !important;
+    color-scheme: light !important;
+  }
+  select option:disabled { color: #5a6576 !important; }
+}
+
+/* Standalone Firefox/Zen download views, separate from arbitrary website styles. */
+@-moz-document url("about:downloads"), url-prefix("chrome://browser/content/downloads/"), url-prefix("chrome://browser/content/places/") {
+  :root {
+    color-scheme: dark !important;
+    --background-color-canvas: #050607 !important;
+    --background-color-box: #0b0d10 !important;
+    --text-color: #f5f6f8 !important;
+    --text-color-deemphasized: #c0c5cd !important;
+    --input-bgcolor: #101215 !important;
+    --input-color: #f5f6f8 !important;
+    --toolbar-color: #f5f6f8 !important;
+    --toolbar-bgcolor: #050607 !important;
+  }
+  body, #downloadsRichListBox, #downloadsListBox, tree {
+    background-color: #050607 !important;
+    color: #f5f6f8 !important;
+  }
+  .downloadTarget, .downloadDetails, .download-state, .downloadContainer {
+    color: #f5f6f8 !important;
+    text-shadow: none !important;
+  }
+  richlistitem { background-color: #0b0d10 !important; color: #f5f6f8 !important; }
+  richlistitem:hover { background-color: #243b58 !important; color: #ffffff !important; }
+  input, search-textbox { background-color: #101215 !important; color: #f5f6f8 !important; }
+}

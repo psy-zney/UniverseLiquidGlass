@@ -1,0 +1,312 @@
+/* Cosmos UI: paired surfaces and foregrounds, with animation limited to decoration. */
+:root {
+  --cosmos-ink: #f5f6f8;
+  --cosmos-muted: #bbc1c9;
+  --cosmos-panel: #050607;
+  --cosmos-card: #0b0d10;
+  --cosmos-hover: #1b1e22;
+  --cosmos-line: #55769b70;
+  --zen-branding-bg: #030405 !important;
+  --arrowpanel-background: var(--cosmos-panel) !important;
+  --arrowpanel-color: var(--cosmos-ink) !important;
+  --panel-background: var(--cosmos-panel) !important;
+  --panel-color: var(--cosmos-ink) !important;
+  --panel-text-color: var(--cosmos-ink) !important;
+  --menu-background-color: var(--cosmos-panel) !important;
+  --menu-color: var(--cosmos-ink) !important;
+  --background-color-box: var(--cosmos-panel) !important;
+  --background-color-canvas: #030405 !important;
+  --text-color: var(--cosmos-ink) !important;
+  --text-color-deemphasized: var(--cosmos-muted) !important;
+  --input-bgcolor: #0b0d10 !important;
+  --input-color: var(--cosmos-ink) !important;
+  --button-background-color: #191d23 !important;
+  --button-text-color: var(--cosmos-ink) !important;
+  --zen-toolbar-element-bg: #14191f !important;
+  --toolbarbutton-icon-fill: #e1e5eb !important;
+}
+
+/* Preserve Zen's sidebar positioning and compact-mode mechanics. */
+#navigator-toolbox :is(#nav-bar, #zen-sidebar-top-buttons, #zen-sidebar-foot-buttons) {
+  background-color: #030405e8 !important;
+}
+#navigator-toolbox :is(toolbarbutton, button) {
+  text-shadow: 0 1px 2px #030710 !important;
+}
+#navigator-toolbox :is(#tabs-newtab-button, #vertical-tabs-newtab-button) {
+  color: #f5f6f8 !important;
+  background-color: #0b0e12d9 !important;
+  border-radius: 10px !important;
+}
+.tabbrowser-tab .tab-stack {
+  transition: transform 180ms cubic-bezier(.2,.7,.3,1) !important;
+}
+.tabbrowser-tab:hover .tab-stack { transform: translateX(2px); }
+.tabbrowser-tab:active .tab-stack { transform: scale(.985); }
+.tabbrowser-tab .tab-background {
+  backdrop-filter: blur(16px) saturate(145%) !important;
+  background: linear-gradient(115deg, #ffffff16, transparent 58%), rgba(25,28,32,.8) !important;
+  border-color: #d4dbe552 !important;
+  box-shadow: inset 0 1px 0 #ffffff45, inset 0 -1px 0 #ffffff12, 0 3px 9px #02071133 !important;
+}
+.tabbrowser-tab:hover .tab-background {
+  background: linear-gradient(115deg, #ffffff28, transparent 55%), rgba(31,35,40,.9) !important;
+  border-color: #dce2ea99 !important;
+  box-shadow: inset 0 1px 0 #ffffff66, 0 0 13px #c0cbd522 !important;
+}
+.tabbrowser-tab:is([selected], [visuallyselected]) .tab-background {
+  backdrop-filter: blur(20px) saturate(155%) !important;
+  border-color: #e5e9efc2 !important;
+  background: linear-gradient(115deg, #ffffff29, #ffffff0c 58%, #ffffff14), rgba(38,42,48,.88) !important;
+  box-shadow: inset 0 1px 0 #ffffff77, inset 2px 0 #e2e7edcc, inset 0 -1px 0 #ffffff26, 0 0 15px #bbc5cf2a !important;
+}
+@keyframes cosmos-tab-breathe {
+  0%,100% { filter: brightness(1); }
+  50% { filter: brightness(1.12); }
+}
+.tabbrowser-tab:is([selected], [visuallyselected]) .tab-stack::after {
+  left: 4% !important;
+  bottom: 1px !important;
+  width: 30% !important;
+  height: 3px !important;
+  z-index: 0 !important;
+  box-shadow: 0 0 5px #dae0e688 !important;
+}
+.tabbrowser-tab[busy]:is([selected], [visuallyselected]) .tab-stack::after {
+  animation: cosmos-tab-loading 1.5s linear infinite !important;
+}
+@keyframes cosmos-tab-loading {
+  0% { transform: translateX(-15%); opacity: 0; }
+  10% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateX(235%); opacity: 0; }
+}
+.zen-library-space-tabs .tab-stack { transform: none !important; }
+.zen-library-space-tabs .tab-background { animation: none !important; filter: none !important; }
+.zen-library-space-tabs .tab-stack::after { content: none !important; }
+
+/* Loading star: only the active loading page, only in the top border lane. */
+__TOP_EVENT_CSS__
+#zen-appcontent-navbar-container {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  box-shadow: none !important;
+}
+:root:has(.tabbrowser-tab[busy]:is([selected], [visuallyselected])) #zen-appcontent-navbar-container {
+  background-image:
+    radial-gradient(circle, #fff 0 13%, #e6e9ee 29%, #cad1d877 50%, transparent 72%),
+    linear-gradient(90deg, transparent, #cad1d877 60%, #e1f1ff) !important;
+  background-size: 10px 10px, 62px 2px !important;
+  background-repeat: no-repeat !important;
+  animation: cosmos-loading-star 2s linear infinite !important;
+}
+@keyframes cosmos-loading-star {
+  from { background-position: -12px -2px, -74px 2px; }
+  to { background-position: calc(100% + 12px) -2px, calc(100% + 74px) 2px; }
+}
+@property --cosmos-frame-glow {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #b8bec526;
+}
+.browserSidebarContainer.deck-selected {
+  border-color: var(--cosmos-frame-glow) !important;
+  box-shadow: 0 0 0 1px #050910, 0 0 15px var(--cosmos-frame-glow) !important;
+  animation: cosmos-frame 14s ease-in-out infinite !important;
+}
+@keyframes cosmos-frame {
+  0%,100% { --cosmos-frame-glow: #b8bec526; }
+  34% { --cosmos-frame-glow: #c9cfd633; }
+  67% { --cosmos-frame-glow: #b9c0c92e; }
+}
+
+/* Library: solid dark surfaces with explicit foregrounds in every section. */
+zen-library {
+  color-scheme: dark !important;
+  color: var(--cosmos-ink) !important;
+  --zen-library-pill-bg: #101215 !important;
+  --zen-library-pill-hover-bg: #24282e !important;
+  --zen-branding-bg: #090b0e !important;
+  --toolbox-textcolor: #f5f6f8 !important;
+  --toolbar-color: #f5f6f8 !important;
+  --toolbarbutton-icon-fill: #e1e5eb !important;
+  --text-color: #f5f6f8 !important;
+  --text-color-deemphasized: #bbc1c9 !important;
+  --input-bgcolor: #101215 !important;
+  --input-color: #f5f6f8 !important;
+  background-color: #050607 !important;
+  border-inline-end: 1px solid #55769b70 !important;
+}
+#zen-library-panel, #zen-library-content {
+  color: #f5f6f8 !important;
+  background: radial-gradient(ellipse at 100% 0%,#191d224d,transparent 55%), radial-gradient(ellipse at 0% 95%,#151a1e40,transparent 60%), #050607 !important;
+}
+#zen-library-side { color: #f5f6f8 !important; background: #030405 !important; min-width: 90px !important; }
+.zen-library-tab {
+  color: #f5f6f8 !important;
+  border: 1px solid transparent !important;
+  border-radius: 14px !important;
+  margin: 4px 7px !important;
+}
+.zen-library-tab[active] { background: #171a1e !important; border-color: #87b6e34d !important; }
+.zen-library-tab:hover { background: #111417 !important; }
+zen-library .zen-library-tab label { color: #f5f6f8 !important; }
+.zen-library-tab-icon-image { --stroke: #c4dcf6 !important; --fill: #303940 !important; }
+zen-library .zen-library-search-box {
+  background: #101215 !important;
+  color: #f5f6f8 !important;
+  border: 1px solid #6384aa55 !important;
+  min-height: 40px !important;
+}
+zen-library .zen-library-search-box input {
+  background: transparent !important;
+  color: #f5f6f8 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+zen-library .zen-library-search-box:focus-within { outline: 2px solid #9dcdf4 !important; outline-offset: 1px !important; }
+zen-library .zen-library-search-box input:focus-visible { outline: none !important; }
+zen-library .zen-library-search-box input::placeholder { color: #c0cfe2 !important; opacity: 1 !important; }
+zen-library :is(.zen-library-filter-button,.zen-library-filter-chip,.zen-library-filter-done) {
+  color: #f5f6f8 !important;
+  background: #101215 !important;
+  border: 1px solid #6384aa55 !important;
+}
+zen-library :is(.zen-library-filter-chip[active],.zen-library-filter-chip:hover,.zen-library-filter-button:hover) {
+  color: #ffffff !important;
+  background: #24292e !important;
+}
+zen-library :is(.zen-library-row-title,.zen-library-space-name,.zen-library-space-name-input,.zen-library-empty) {
+  color: #f5f6f8 !important;
+  opacity: 1 !important;
+}
+zen-library :is(.zen-library-row-subtitle,.zen-library-group h3,.zen-library-filter-group h3) {
+  color: #c0c5cd !important;
+  opacity: 1 !important;
+}
+zen-library .zen-library-row:hover { background: #1c2025 !important; }
+zen-library .zen-library-row[missing] { opacity: 1 !important; }
+zen-library .zen-library-row[missing] .zen-library-row-title { color: #c1ccdc !important; }
+zen-library .zen-library-row[missing] .zen-library-row-subtitle { color: #e6c599 !important; }
+zen-library .zen-library-search-results { scrollbar-color: #718eaf #050607 !important; }
+
+/* Downloads: full-height layout, readable names and stable action controls. */
+zen-library:has(.zen-library-tab[data-section="downloads"][active]) {
+  width: min(720px, 96vw) !important;
+}
+zen-library-downloads-section {
+  max-width: none !important;
+  width: 100% !important;
+}
+zen-library-downloads-section .zen-library-row {
+  min-height: 80px !important;
+  box-sizing: border-box !important;
+  margin-block: 7px !important;
+  padding: 11px 12px !important;
+  gap: 13px !important;
+  background: #0c0f12 !important;
+  border: 1px solid #52739840 !important;
+  border-radius: 13px !important;
+  contain: layout paint style !important;
+  contain-intrinsic-size: auto 80px !important;
+}
+zen-library-downloads-section .zen-library-row:hover { background: #1c2025 !important; border-color: #83b9e777 !important; }
+zen-library-downloads-section .zen-library-row-text { gap: 5px !important; }
+zen-library-downloads-section .zen-library-row-title {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.4 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+zen-library-downloads-section .zen-library-row-subtitle { font-size: 12px !important; line-height: 1.45 !important; }
+zen-library-downloads-section .zen-library-row-icon { width: 34px !important; height: 34px !important; border-radius: 7px !important; }
+#zen-library-panel zen-library-downloads-section .zen-library-row-actions toolbarbutton {
+  display: inline-flex !important;
+  color: #e1e5eb !important;
+  fill: #e1e5eb !important;
+}
+zen-library-downloads-section .zen-library-row:hover .zen-library-download-status { display: inline !important; }
+zen-library-downloads-section .zen-library-row:hover .zen-library-download-url { display: none !important; }
+.zen-library-row-progress { color: #a7ceff !important; }
+#zen-library-download-list {
+  width: min(390px, 92vw) !important;
+  max-height: min(510px, 72vh) !important;
+  overflow-y: auto !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #718eaf #050607 !important;
+}
+#zen-library-download-list .zen-library-download-list-download {
+  min-height: 66px !important;
+  padding: 9px !important;
+  margin-block: 5px !important;
+  border: 1px solid #52739840 !important;
+}
+#zen-library-download-list .zen-library-download-list-title {
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.35 !important;
+  color: #f5f6f8 !important;
+}
+#zen-library-download-list .zen-library-download-list-subtitle { color: #c0c5cd !important; }
+
+/* Workspace previews can carry a light inline theme; pair their text with a dark surface. */
+.zen-library-space {
+  --zen-branding-bg: #080a0d !important;
+  --toolbox-textcolor: #f5f6f8 !important;
+  --toolbar-color: #f5f6f8 !important;
+  --toolbarbutton-icon-fill: #e1e5eb !important;
+  background: #080a0d !important;
+  color: #f5f6f8 !important;
+  border: 1px solid #648ab25c !important;
+}
+.zen-library-space::before {
+  background: radial-gradient(ellipse at 85% 25%, #2d4b5a44, transparent 70%), linear-gradient(165deg,#101317,#07090c) !important;
+  background-blend-mode: normal !important;
+}
+.zen-library-space-header,.zen-library-space-footer { color: #f5f6f8 !important; opacity: 1 !important; }
+.zen-library-space :is(.zen-library-space-name,.zen-library-space-name-input,span,label,toolbarbutton) { color: #f5f6f8 !important; }
+.zen-library-space-name-input { background: #101215 !important; border: 1px solid #99c5ed !important; }
+.zen-library-space-body { border-color: #7896b344 !important; }
+.zen-library-space :is(.tab-content,.tab-label) { color: #f5f6f8 !important; }
+
+/* Every native browser popup uses paired colors; web select popups remain light. */
+:is(panel,menupopup,notification-message,popupnotification) {
+  color-scheme: dark !important;
+  color: #f5f6f8 !important;
+  --panel-background: #050607 !important;
+  --arrowpanel-background: #050607 !important;
+  --panel-color: #f5f6f8 !important;
+  --panel-text-color: #f5f6f8 !important;
+  --arrowpanel-color: #f5f6f8 !important;
+  --menu-background-color: #050607 !important;
+  --menu-color: #f5f6f8 !important;
+}
+#ContentSelectDropdownPopup {
+  color-scheme: light !important;
+  color: #111827 !important;
+  background: #ffffff !important;
+  --panel-background: #ffffff !important;
+  --panel-color: #111827 !important;
+  --panel-text-color: #111827 !important;
+  --arrowpanel-background: #ffffff !important;
+  --arrowpanel-color: #111827 !important;
+  --menu-background-color: #ffffff !important;
+  --menu-color: #111827 !important;
+}
+#ContentSelectDropdownPopup::part(content) { background: #ffffff !important; color: #111827 !important; }
+#ContentSelectDropdownPopup :is(menuitem,menucaption) { color: #111827 !important; background-color: #ffffff !important; }
+#ContentSelectDropdownPopup menuitem[_moz-menuactive="true"] { background: #dbeafe !important; color: #102447 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  #navigator-toolbox::before { animation-duration: 14s !important; }
+  #navigator-toolbox::after { animation-duration: 60s !important; }
+  .browserSidebarContainer.deck-selected { animation: none !important; }
+  .tabbrowser-tab .tab-background { animation: none !important; }
+  .tabbrowser-tab:hover .tab-stack { transform: none; }
+}

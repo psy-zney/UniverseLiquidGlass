@@ -1,0 +1,885 @@
+/*
+ * Universe Liquid Glass — deep black cosmos for Zen Browser.
+ * Local SVG stars, celestial events, liquid glass tabs and readable panels.
+ * https://github.com/psy-zney/UniverseLiquidGlass
+ */
+
+:root {
+  color-scheme: dark !important;
+
+  --pb-black: #020304;
+  --pb-deep: #060809;
+  --pb-slate: #101315;
+  --pb-surface: rgba(7,9,12,.84);
+  --pb-surface-hover: rgba(17,20,24,.9);
+  --pb-surface-active: rgba(22,25,30,.92);
+  --pb-border: rgba(181, 202, 222, 0.16);
+  --pb-border-hover: rgba(164, 201, 231, 0.46);
+  --pb-border-active: rgba(198, 226, 248, 0.72);
+  --pb-white: #ffffff;
+  --pb-muted: rgba(255, 255, 255, 0.72);
+  --pb-purple: #b9c0c7;
+  --pb-cyan: #e2e6eb;
+  --pb-radius: 12px;
+  --pb-glass: blur(18px) saturate(145%);
+
+  --lwt-accent-color: var(--pb-black) !important;
+  --lwt-text-color: var(--pb-white) !important;
+  --lwt-toolbar-field-color: var(--pb-white) !important;
+  --lwt-toolbar-field-focus-color: var(--pb-white) !important;
+  --lwt-toolbar-field-background-color: rgba(13, 19, 27, 0.94) !important;
+  --lwt-toolbar-field-focus-background-color: rgba(19, 28, 39, 0.98) !important;
+  --toolbar-bgcolor: var(--pb-black) !important;
+  --toolbar-color: var(--pb-white) !important;
+  --toolbar-field-background-color: rgba(13, 19, 27, 0.94) !important;
+  --toolbar-field-color: var(--pb-white) !important;
+  --toolbar-field-border-color: var(--pb-border) !important;
+  --toolbarbutton-icon-fill: var(--pb-white) !important;
+  --toolbarbutton-icon-fill-attention: var(--pb-cyan) !important;
+  --tab-selected-textcolor: var(--pb-white) !important;
+  --tab-selected-bgcolor: var(--pb-surface-active) !important;
+  --tab-hover-background-color: var(--pb-surface-hover) !important;
+  --input-color: var(--pb-white) !important;
+  --input-bgcolor: rgba(15, 22, 31, 0.96) !important;
+  --button-text-color-primary: var(--pb-white) !important;
+  --button-text-color: var(--pb-white) !important;
+  --button-background-color: rgba(26, 38, 51, 0.90) !important;
+  --button-background-color-hover: rgba(35, 49, 65, 0.95) !important;
+  --button-background-color-active: rgba(45, 61, 79, 0.98) !important;
+  --button-border-color: var(--pb-border) !important;
+  /* Firefox/Zen mới lấy màu panel và trạng thái nút trực tiếp từ :root. */
+  --panel-background: rgba(9, 14, 20, 0.97) !important;
+  --panel-color: var(--pb-white) !important;
+  --panel-item-hover-bgcolor: rgba(255, 255, 255, 0.10) !important;
+  --panel-item-active-bgcolor: rgba(255, 255, 255, 0.16) !important;
+  --panel-separator-color: rgba(181, 202, 222, 0.18) !important;
+  --arrowpanel-color: var(--pb-white) !important;
+  --arrowpanel-background: rgba(9, 14, 20, 0.97) !important;
+  --arrowpanel-border-color: var(--pb-border) !important;
+  --toolbarbutton-hover-background: rgba(255, 255, 255, 0.10) !important;
+  --toolbarbutton-active-background: rgba(255, 255, 255, 0.16) !important;
+  --toolbarbutton-hover-bordercolor: var(--pb-border-hover) !important;
+  --urlbarView-highlight-background: rgba(255, 255, 255, 0.10) !important;
+  --urlbarView-highlight-color: var(--pb-white) !important;
+  --zen-primary-color: var(--pb-purple) !important;
+  --zen-colors-primary: var(--pb-black) !important;
+  --zen-colors-secondary: var(--pb-deep) !important;
+  --zen-colors-tertiary: #0c1017 !important;
+  --zen-colors-border: var(--pb-border) !important;
+}
+
+/* =========================================================
+   NỀN ĐEN TOÀN BỘ KHUNG ZEN
+   ========================================================= */
+
+#main-window,
+#browser,
+#zen-main-app-wrapper,
+#zen-appcontent-wrapper,
+#zen-tabbox-wrapper,
+#tabbrowser-tabpanels {
+  color: var(--pb-white) !important;
+  background-color: var(--pb-black) !important;
+  background-image: none !important;
+}
+
+__SIDEBAR__
+
+#titlebar,
+#TabsToolbar,
+#nav-bar,
+#PersonalToolbar,
+.zen-browser-generic-background,
+.zen-toolbar-background,
+.zen-toolbar-background::before,
+.zen-toolbar-background::after {
+  color: var(--pb-white) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  outline: none !important;
+}
+
+/* Thanh ngang trên vùng website. */
+#zen-appcontent-navbar-wrapper,
+#zen-appcontent-navbar-container {
+  color: var(--pb-white) !important;
+  background-color: var(--pb-deep) !important;
+  background-image:
+    linear-gradient(90deg, var(--pb-black), #111923 50%, var(--pb-black)) !important;
+  border-bottom: 1px solid rgba(181, 202, 222, 0.16) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.48) !important;
+}
+
+#zen-appcontent-navbar-container #nav-bar,
+#zen-appcontent-navbar-container #titlebar,
+#zen-appcontent-navbar-container #TabsToolbar {
+  color: var(--pb-white) !important;
+  background: transparent !important;
+}
+
+/* Viền phân cách sidebar và nội dung. */
+#zen-sidebar-splitter,
+#sidebar-splitter {
+  background-color: rgba(164, 201, 231, 0.16) !important;
+  border-color: transparent !important;
+}
+
+/* Viền nổi quanh vùng website. */
+.browserSidebarContainer {
+  background-color: var(--pb-black) !important;
+  border: 1px solid rgba(181, 202, 222, 0.20) !important;
+  border-radius: 14px !important;
+  outline: none !important;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.90),
+    0 0 13px rgba(139, 176, 207, 0.13),
+    0 10px 26px rgba(0, 0, 0, 0.52) !important;
+}
+
+.browserSidebarContainer.deck-selected {
+  border-color: rgba(181, 215, 241, 0.38) !important;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.92),
+    0 0 16px rgba(139, 176, 207, 0.18),
+    0 12px 28px rgba(0, 0, 0, 0.58) !important;
+}
+
+/* =========================================================
+   TAB GLASS: TỐI, TRONG, DỄ ĐỌC
+   ========================================================= */
+
+.tabbrowser-tab {
+  color: var(--pb-white) !important;
+  border-radius: var(--pb-radius) !important;
+  /* Cho quầng sáng của tab hiện tại lan ra ngoài pill. */
+  overflow: visible !important;
+}
+
+/*
+ * Zen mới có thêm nhãn phụ bên dưới tiêu đề tab. Ở chế độ tab gọn,
+ * nhãn này tràn ra ngoài pill và chồng lên tab kế tiếp, nên chỉ giữ một dòng.
+ */
+#tabbrowser-tabs .tabbrowser-tab :is(.tab-secondary-label, .zen-tab-sublabel) {
+  display: none !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab :is(.tab-content, .tab-label-container) {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-label-container {
+  max-height: 1.5em !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-label {
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.tabbrowser-tab .tab-background {
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  border-radius: var(--pb-radius) !important;
+  background:
+    linear-gradient(125deg, rgba(255,255,255,.08), transparent 45%),
+    var(--pb-surface) !important;
+  backdrop-filter: var(--pb-glass) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    0 3px 10px rgba(0, 0, 0, 0.25) !important;
+  transition:
+    background-color 170ms ease,
+    border-color 170ms ease,
+    box-shadow 170ms ease,
+    transform 120ms ease !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+  border-color: var(--pb-border-hover) !important;
+  background:
+    linear-gradient(125deg, rgba(255,255,255,.13), transparent 45%),
+    var(--pb-surface-hover) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 11px rgba(139, 176, 207, 0.16),
+    0 5px 13px rgba(0, 0, 0, 0.30) !important;
+}
+
+.tabbrowser-tab:is([selected], [visuallyselected]) .tab-background {
+  border-color: var(--pb-border-active) !important;
+  background:
+    linear-gradient(125deg, rgba(255,255,255,.17), transparent 48%),
+    var(--pb-surface-active) !important;
+  backdrop-filter: blur(22px) saturate(155%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.20),
+    0 0 13px rgba(139, 176, 207, 0.24),
+    0 6px 16px rgba(0, 0, 0, 0.36) !important;
+  animation: cosmos-tab-breathe 5.8s ease-in-out infinite !important;
+}
+
+/*
+ * Vệt sáng chạy dưới tab đang chọn, lấy cảm hứng từ đầu sáng của loading bar:
+ * một lõi trắng, quầng sáng xanh thép và chuyển động chậm.
+ */
+.tabbrowser-tab:is([selected], [visuallyselected]) .tab-stack {
+  position: relative !important;
+}
+
+.tabbrowser-tab:is([selected], [visuallyselected]) .tab-stack::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 10% !important;
+  bottom: 2px !important;
+  width: 22% !important;
+  height: 1px !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
+  border-radius: 999px !important;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(155, 184, 210, 0.40) 24%,
+    #ffffff 68%,
+    transparent
+  ) !important;
+  box-shadow:
+    0 0 4px rgba(255, 255, 255, 0.95),
+    0 0 9px rgba(155, 184, 210, 0.72),
+    0 0 13px rgba(197, 231, 255, 0.36) !important;
+  animation: none !important;
+}
+.tabbrowser-tab:is([selected], [visuallyselected])[busy] .tab-stack::after {
+  animation: pb-loading-streak 1.8s linear infinite !important;
+}
+
+.tabbrowser-tab:active .tab-background {
+  transform: scale(0.98) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-label-container,
+#tabbrowser-tabs .tabbrowser-tab .tab-label {
+  color: var(--pb-white) !important;
+  opacity: 1 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.92) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-icon-image {
+  opacity: 1 !important;
+  filter:
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 0 2px rgba(181, 215, 241, 0.20)) !important;
+}
+
+/*
+ * Nút âm thanh từ Zen/Firefox mới là <moz-button> có Shadow DOM.
+ * Tô cả host lẫn ::part(button) để icon luôn trắng ở tab nền và tab hiện tại.
+ */
+#tabbrowser-tabs .tabbrowser-tab .tab-audio-button,
+#tabbrowser-tabs .tabbrowser-tab .tab-audio-button::part(button) {
+  --button-text-color: var(--pb-white) !important;
+  --toolbarbutton-icon-fill: var(--pb-white) !important;
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  fill-opacity: 1 !important;
+  opacity: 1 !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: var(--pb-border) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-audio-button:hover::part(button) {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+.tab-close-button,
+.tab-reset-button {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  border-radius: 8px !important;
+}
+
+.tab-close-button:hover,
+.tab-reset-button:hover {
+  background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+/* =========================================================
+   URL BAR, SEARCH VÀ TOOLBAR BUTTON
+   ========================================================= */
+
+#urlbar-background {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,.08), transparent 50%),
+    rgba(15, 22, 31, 0.90) !important;
+  backdrop-filter: blur(20px) saturate(145%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    0 4px 13px rgba(0, 0, 0, 0.38) !important;
+}
+
+#urlbar[focused="true"] #urlbar-background,
+#urlbar[open] #urlbar-background {
+  border-color: rgba(181, 215, 241, 0.58) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.13),
+    0 0 12px rgba(139, 176, 207, 0.19),
+    0 5px 15px rgba(0, 0, 0, 0.44) !important;
+}
+
+#urlbar-input,
+#identity-icon,
+#tracking-protection-icon-container {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  opacity: 1 !important;
+}
+
+/*
+ * Các bản Zen mới tách search-mode, page-action và input thành nhiều pill.
+ * Xóa nền sáng mặc định để không còn ô trắng ở cuối thanh địa chỉ.
+ */
+#urlbar,
+#urlbar-container,
+#urlbar-input-container,
+.urlbar-input-box,
+#identity-box,
+#page-action-buttons,
+#tracking-protection-icon-container,
+.urlbar-page-action {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  background-color: transparent !important;
+}
+
+#urlbar-searchmode-switcher,
+#urlbar-search-mode-indicator,
+#searchmode-switcher-chicklet,
+#urlbar-zoom-button {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  background-color: rgba(15, 22, 31, 0.94) !important;
+  background-image: none !important;
+  border-color: var(--pb-border) !important;
+}
+
+#urlbar-searchmode-switcher:hover,
+#urlbar-search-mode-indicator:hover,
+#searchmode-switcher-chicklet:hover,
+#urlbar-zoom-button:hover,
+.urlbar-page-action:hover {
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+/* Xóa nền trắng của các box/nút mới nằm trực tiếp trong input URL. */
+#urlbar-input-container > :not(#urlbar-background):not(.urlbar-input-box),
+#page-action-buttons > :is(toolbarbutton, button, moz-button),
+#identity-box > :is(box, button, moz-button) {
+  --button-text-color: var(--pb-white) !important;
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  border-color: var(--pb-border) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#urlbar :is(.urlbar-icon, .toolbarbutton-icon),
+#page-action-buttons > toolbarbutton {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  opacity: 1 !important;
+}
+
+#urlbar-input::placeholder,
+#navigator-toolbox input::placeholder {
+  color: var(--pb-muted) !important;
+  opacity: 1 !important;
+}
+
+#navigator-toolbox input,
+#navigator-toolbox search-textbox,
+#navigator-toolbox .searchbar-textbox {
+  color: var(--pb-white) !important;
+  background-color: rgba(15, 22, 31, 0.86) !important;
+  caret-color: var(--pb-cyan) !important;
+}
+
+.urlbarView,
+.urlbarView-body-outer,
+.urlbarView-row {
+  color: var(--pb-white) !important;
+  background-color: rgba(9, 14, 20, 0.96) !important;
+}
+
+.urlbarView-row:hover,
+.urlbarView-row[selected] {
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+.urlbarView-title,
+.urlbarView-url {
+  color: var(--pb-white) !important;
+}
+
+#navigator-toolbox toolbarbutton,
+#zen-appcontent-navbar-container toolbarbutton,
+#tabs-newtab-button,
+.titlebar-button {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  border-radius: 9px !important;
+  transition:
+    background-color 150ms ease,
+    box-shadow 150ms ease !important;
+}
+
+#navigator-toolbox toolbarbutton:hover,
+#zen-appcontent-navbar-container toolbarbutton:hover,
+#tabs-newtab-button:hover,
+.titlebar-button:hover {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  background-color: rgba(255, 255, 255, 0.10) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    0 0 8px rgba(139, 176, 207, 0.12) !important;
+}
+
+.titlebar-close:hover {
+  background-color: rgba(220, 55, 83, 0.78) !important;
+}
+
+#navigator-toolbox :is(
+  .toolbarbutton-icon,
+  .toolbarbutton-text,
+  .toolbarbutton-badge-stack,
+  .tab-icon-overlay,
+  label,
+  description
+),
+#zen-appcontent-navbar-container :is(
+  .toolbarbutton-icon,
+  .toolbarbutton-text,
+  .toolbarbutton-badge-stack
+),
+#tabs-newtab-button :is(.toolbarbutton-icon, .toolbarbutton-text) {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  opacity: 1 !important;
+}
+
+#navigator-toolbox toolbarbutton[disabled="true"],
+#zen-appcontent-navbar-container toolbarbutton[disabled="true"] {
+  opacity: 0.42 !important;
+}
+
+#navigator-toolbox toolbarbutton:not([disabled="true"]),
+#zen-appcontent-navbar-container toolbarbutton:not([disabled="true"]) {
+  opacity: 1 !important;
+}
+
+/* =========================================================
+   MEDIA, MENU, PANEL VÀ TOOLTIP GLASS
+   ========================================================= */
+
+#zen-media-controls-toolbar {
+  color: var(--pb-white) !important;
+  color-scheme: dark !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/*
+ * Zen đặt nền thật của media player trên toolbaritem con, không phải toolbar.
+ * Ép đúng lớp này để tránh pill trắng làm mất icon trắng.
+ */
+#zen-media-controls-toolbar > toolbaritem,
+#zen-media-controls-hbox {
+  color: var(--pb-white) !important;
+  color-scheme: dark !important;
+  border: 1px solid rgba(181, 202, 222, 0.20) !important;
+  border-radius: 12px !important;
+  background-color: rgba(15, 22, 31, 0.94) !important;
+  background-image:
+    linear-gradient(120deg, rgba(255,255,255,.09), transparent 52%) !important;
+  backdrop-filter: blur(20px) saturate(145%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    0 0 10px rgba(139, 176, 207, 0.10),
+    0 5px 16px rgba(0, 0, 0, 0.44) !important;
+}
+
+#zen-media-controls-toolbar toolbarbutton,
+#zen-media-controls-toolbar toolbarbutton :is(
+  .toolbarbutton-icon,
+  .toolbarbutton-text,
+  .toolbarbutton-badge-stack
+) {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+#zen-media-controls-toolbar toolbarbutton:hover {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  background-color: rgba(197, 231, 255, 0.12) !important;
+}
+
+#zen-media-controls-toolbar toolbarbutton[disabled="true"] {
+  opacity: 0.42 !important;
+}
+
+#zen-media-controls-toolbar #zen-media-progress-bar::-moz-range-track {
+  background-color: rgba(181, 202, 222, 0.22) !important;
+}
+
+#zen-media-controls-toolbar #zen-media-progress-bar::-moz-range-progress {
+  background-color: var(--pb-cyan) !important;
+}
+
+#zen-media-controls-toolbar #zen-media-progress-bar::-moz-range-thumb {
+  background-color: var(--pb-white) !important;
+  box-shadow: 0 0 7px rgba(197, 231, 255, 0.72) !important;
+}
+
+panel,
+menupopup {
+  --panel-background: rgba(9, 14, 20, 0.97) !important;
+  --panel-color: var(--pb-white) !important;
+  --panel-border-color: var(--pb-border) !important;
+  color: var(--pb-white) !important;
+}
+
+/*
+ * Firefox/Zen mới vẽ nền thật trên panelview/panelmultiview và ::part(content),
+ * vì vậy chỉ đặt --panel-background trên <panel> không còn đủ.
+ */
+panel::part(content),
+menupopup::part(content),
+.panel-arrowcontent,
+panelmultiview,
+panelview,
+.panel-viewstack,
+.panel-subview-body,
+#appMenu-popup,
+#appMenu-multiView,
+#unified-extensions-panel,
+#widget-overflow {
+  color: var(--pb-white) !important;
+  background-color: rgba(9, 14, 20, 0.97) !important;
+  background-image: none !important;
+  border-color: var(--pb-border) !important;
+}
+
+panelview :is(
+  button,
+  moz-button,
+  toolbarbutton,
+  .subviewbutton,
+  .panel-banner-item,
+  .panel-info-button,
+  label,
+  description
+),
+.panel-subview-body :is(button, moz-button, toolbarbutton, .subviewbutton, label, description) {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+  border-color: var(--pb-border) !important;
+  background-image: none !important;
+}
+
+panelview :is(button, moz-button, toolbarbutton, .subviewbutton):hover,
+.panel-subview-body :is(button, moz-button, toolbarbutton, .subviewbutton):hover {
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+panelview :is(button, moz-button, toolbarbutton, .subviewbutton):active,
+.panel-subview-body :is(button, moz-button, toolbarbutton, .subviewbutton):active {
+  background-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+toolbarseparator,
+menuseparator,
+.panel-separator {
+  border-color: rgba(181, 202, 222, 0.18) !important;
+}
+
+menu,
+menuitem {
+  color: var(--pb-white) !important;
+  fill: var(--pb-white) !important;
+}
+
+menu:hover,
+menuitem:hover,
+menu[_moz-menuactive="true"],
+menuitem[_moz-menuactive="true"] {
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+tooltip {
+  color: var(--pb-white) !important;
+  background-color: rgba(10, 12, 19, 0.98) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 7px !important;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* =========================================================
+   HIỆU ỨNG SÁNG NHẸ
+   ========================================================= */
+
+@keyframes pb-star-drift-small {
+  0% {
+    opacity: 0.42;
+    transform: translateY(0);
+  }
+  38% {
+    opacity: 0.82;
+  }
+  72% {
+    opacity: 0.50;
+  }
+  100% {
+    opacity: 0.42;
+    transform: translateY(-1800px);
+  }
+}
+
+@keyframes pb-star-drift-medium {
+  0% {
+    opacity: 0.30;
+    transform: translateY(0);
+  }
+  46% {
+    opacity: 0.76;
+  }
+  74% {
+    opacity: 0.38;
+  }
+  100% {
+    opacity: 0.30;
+    transform: translateY(-1800px);
+  }
+}
+
+@keyframes pb-loading-streak {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  18% {
+    opacity: 0.95;
+  }
+  72% {
+    opacity: 0.90;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(330%);
+  }
+}
+
+@keyframes pb-active-tab {
+  0%,
+  100% {
+    border-color: rgba(181, 215, 241, 0.56);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.17),
+      0 0 7px rgba(139, 176, 207, 0.25),
+      0 5px 14px rgba(0, 0, 0, 0.34);
+  }
+  50% {
+    border-color: rgba(213, 239, 255, 0.94);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.30),
+      0 0 7px rgba(255, 255, 255, 0.42),
+      0 0 17px rgba(155, 203, 239, 0.70),
+      0 7px 17px rgba(0, 0, 0, 0.42);
+  }
+}
+
+/* Luôn giữ hiệu ứng của theme, kể cả khi Windows báo prefers-reduced-motion. */
+
+/* =========================================================
+   ZEN UPDATE FIX: DOWNLOADS, LIBRARY AND NOTIFICATIONS (2026-10-08)
+   ========================================================= */
+:root {
+  /* New Zen components use this scheme instead of inheriting :root's. */
+  --toolbar-color-scheme: dark !important;
+  --toolbox-textcolor: #f4f7fb !important;
+  --text-color: #f4f7fb !important;
+  --text-color-deemphasized: #bac8d7 !important;
+  --background-color-box: #0b0e12 !important;
+  --background-color-canvas: #06080b !important;
+  --zen-toolbar-element-bg: #141a20 !important;
+  --zen-sidebar-notification-bg: #0b0e12 !important;
+  --zen-sidebar-notification-outline: 1px solid #43576b !important;
+  --zen-sidebar-notification-shadow: 0 6px 20px #0008 !important;
+  --button-text-color-ghost: #f4f7fb !important;
+  --button-text-color-ghost-hover: #ffffff !important;
+  --button-text-color-ghost-active: #ffffff !important;
+  --button-background-color-ghost-hover: #293a4d !important;
+  --button-background-color-ghost-active: #354a60 !important;
+}
+
+/* The new hover list uses HTML spans, which the old label rules missed.
+   Give each entry its own solid card so tabs/media cannot show through. */
+#zen-library-download-list {
+  color: #f4f7fb !important;
+  color-scheme: dark !important;
+  background: #06080b !important;
+  border: 1px solid #43576b !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 24px #0009 !important;
+  box-sizing: border-box !important;
+  padding: 6px !important;
+  z-index: 10 !important;
+}
+#zen-library-download-list .zen-library-download-list-download {
+  color: #f4f7fb !important;
+  background: #11161b !important;
+  border-radius: 10px !important;
+}
+#zen-library-download-list .zen-library-download-list-download:hover {
+  background: #20272e !important;
+}
+#zen-library-download-list .zen-library-download-list-title {
+  color: #f4f7fb !important;
+  opacity: 1 !important;
+}
+#zen-library-download-list .zen-library-download-list-subtitle {
+  color: #bac8d7 !important;
+  opacity: 1 !important;
+}
+
+/* Keep Library usable, with opaque surfaces in every section. */
+zen-library {
+  color-scheme: dark !important;
+  color: #f4f7fb !important;
+  --zen-library-pill-bg: #141a20 !important;
+  --zen-library-pill-hover-bg: #242b33 !important;
+}
+#zen-library-panel,
+#zen-library-content {
+  background: #0b0e12 !important;
+  color: #f4f7fb !important;
+}
+#zen-library-side {
+  background: #06080b !important;
+  color: #f4f7fb !important;
+}
+zen-library :is(label, h2, h3, p, input, button, toolbarbutton, .zen-library-row-title) {
+  color: #f4f7fb !important;
+}
+zen-library .zen-library-row-subtitle {
+  color: #bac8d7 !important;
+  opacity: 1 !important;
+}
+zen-library .zen-library-row[missing] {
+  opacity: 0.85 !important;
+}
+zen-library .zen-library-search-box input::placeholder {
+  color: #bac8d7 !important;
+  opacity: 1 !important;
+}
+zen-library :is(.zen-library-row:hover, .zen-library-filter-chip[active]) {
+  background: #242b33 !important;
+}
+
+/* Sidebar notification has Shadow DOM: set color on the host and use
+   inherited variables rather than selectors that cannot reach its labels. */
+zen-sidebar-notification {
+  color: #f4f7fb !important;
+  color-scheme: dark !important;
+  background: #0b0e12 !important;
+}
+#zen-toast-container .zen-toast,
+notification,
+notification-message,
+.popup-notification-body,
+.popup-notification-footer {
+  color-scheme: dark !important;
+  color: #f4f7fb !important;
+  background: #0b0e12 !important;
+  border: 1px solid #43576b !important;
+}
+#zen-toast-container .zen-toast :is(label, span, description, button),
+:is(notification, notification-message, popupnotification) :is(label, description, span, p, button) {
+  color: #f4f7fb !important;
+}
+#zen-toast-container .zen-toast .description {
+  color: #bac8d7 !important;
+  opacity: 1 !important;
+}
+
+/* Standard panels, permission prompts and context menus. */
+:is(panel, menupopup, notification-message) {
+  color-scheme: dark !important;
+  --panel-background: #0b0e12 !important;
+  --arrowpanel-background: #0b0e12 !important;
+  --panel-color: #f4f7fb !important;
+  --arrowpanel-color: #f4f7fb !important;
+  --text-color: #f4f7fb !important;
+  --text-color-deemphasized: #bac8d7 !important;
+  --input-color: #f4f7fb !important;
+  --input-bgcolor: #172432 !important;
+}
+:is(panel, menupopup)::part(content) {
+  color: #f4f7fb !important;
+  background: #0b0e12 !important;
+  border-color: #43576b !important;
+}
+:is(panel, menupopup) :is(label, description, span, p, h1, h2, h3, menu, menuitem, button, moz-button, toolbarbutton) {
+  color: #f4f7fb !important;
+}
+:is(panel, menupopup, notification-message) :is(button, moz-button)::part(button) {
+  color: #f4f7fb !important;
+}
+:is(panel, menupopup) :is(input:not([type="checkbox"]):not([type="radio"]), textarea, search-textbox, menulist) {
+  color: #f4f7fb !important;
+  background-color: #172432 !important;
+  border-color: #43576b !important;
+}
+#downloadsListBox,
+#downloadsSummary {
+  color: #f4f7fb !important;
+  background-color: #0b0e12 !important;
+}
+#downloadsPanel .downloadDetails {
+  color: #bac8d7 !important;
+  opacity: 1 !important;
+}
+:is(panel, menupopup) :is(button, moz-button, toolbarbutton, menu, menuitem):focus-visible,
+zen-library :is(input, button, toolbarbutton):focus-visible {
+  outline: 2px solid #e2e6eb !important;
+  outline-offset: -2px !important;
+}
+
+/* Keep webpage <select> popups light, with readable dark option text. */
+#ContentSelectDropdownPopup {
+  color-scheme: light !important;
+  color: #1f2937 !important;
+  --panel-background: #ffffff !important;
+  --panel-text-color: #1f2937 !important;
+  --content-select-background-image: linear-gradient(#ffffff, #ffffff) !important;
+  background-color: #ffffff !important;
+}
+#ContentSelectDropdownPopup::part(content) {
+  color: #1f2937 !important;
+  background-color: #ffffff !important;
+}
+#ContentSelectDropdownPopup > :is(menuitem, menucaption) {
+  color: #1f2937 !important;
+}

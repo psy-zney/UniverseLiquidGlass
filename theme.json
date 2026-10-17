@@ -1,0 +1,9 @@
+{
+  "name": "Universe Liquid Glass",
+  "version": "1.0.0",
+  "author": "psy-zney",
+  "repository": "https://github.com/psy-zney/UniverseLiquidGlass",
+  "testedZenVersion": "1.23.2b",
+  "style": ["deep black", "liquid glass", "cosmos"],
+  "events": ["comet", "star", "planet", "white dwarf", "black hole", "neutron star", "nebula", "blue star", "galaxy"]
+}

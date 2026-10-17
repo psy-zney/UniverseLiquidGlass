@@ -1,0 +1,551 @@
+{
+  "schema_version": 1,
+  "title": "Universe Liquid Glass — native Zen demo",
+  "fps": 24,
+  "width": 1600,
+  "height": 900,
+  "duration_frames": 1284,
+  "timing_status": "locked",
+  "claim_ids": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "start_frame": 0,
+      "end_frame": 72,
+      "goal": "Introduce the theme and sidebar",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "intro",
+      "tab": 0
+    },
+    {
+      "id": "comet",
+      "start_frame": 72,
+      "end_frame": 156,
+      "goal": "Show Diagonal comet",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "COMET",
+      "title": "Diagonal comet",
+      "description": "A bright head, fine dust tail and a moving halo cross the sidebar diagonally.",
+      "tab": 0
+    },
+    {
+      "id": "star",
+      "start_frame": 156,
+      "end_frame": 240,
+      "goal": "Show Stellar light",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "STAR",
+      "title": "Stellar light",
+      "description": "A warm star casts a local glow through the translucent glass tabs.",
+      "tab": 0
+    },
+    {
+      "id": "planet",
+      "start_frame": 240,
+      "end_frame": 324,
+      "goal": "Show Quiet planetary pass",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "PLANET",
+      "title": "Quiet planetary pass",
+      "description": "A textured, softly illuminated planet drifts past without oversized orbit lines.",
+      "tab": 0
+    },
+    {
+      "id": "white_dwarf",
+      "start_frame": 324,
+      "end_frame": 408,
+      "goal": "Show White dwarf",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "WHITE_DWARF",
+      "title": "White dwarf",
+      "description": "A compact white core and a tight halo brighten the darkness around it.",
+      "tab": 0
+    },
+    {
+      "id": "hole",
+      "start_frame": 408,
+      "end_frame": 492,
+      "goal": "Show Black hole",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "HOLE",
+      "title": "Black hole",
+      "description": "A luminous accretion disc, dark core and simulated gravitational lensing.",
+      "tab": 0
+    },
+    {
+      "id": "neutron",
+      "start_frame": 492,
+      "end_frame": 576,
+      "goal": "Show Neutron star",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "NEUTRON",
+      "title": "Neutron star",
+      "description": "A bright compact source with opposite jets and a pulsing light field.",
+      "tab": 0
+    },
+    {
+      "id": "nebula",
+      "start_frame": 576,
+      "end_frame": 660,
+      "goal": "Show Nebula",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "NEBULA",
+      "title": "Nebula",
+      "description": "Detailed gray and cool dust clouds pass through the field of stars.",
+      "tab": 0
+    },
+    {
+      "id": "blue_star",
+      "start_frame": 660,
+      "end_frame": 744,
+      "goal": "Show Blue star",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "BLUE_STAR",
+      "title": "Blue star",
+      "description": "A blue-white source adds a local accent while the surrounding sky stays black.",
+      "tab": 0
+    },
+    {
+      "id": "galaxy",
+      "start_frame": 744,
+      "end_frame": 828,
+      "goal": "Show Spiral galaxy",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "event",
+      "event": "GALAXY",
+      "title": "Spiral galaxy",
+      "description": "A detailed spiral glides past the sidebar and the exposed top frame.",
+      "tab": 0
+    },
+    {
+      "id": "switch-reading",
+      "start_frame": 828,
+      "end_frame": 888,
+      "goal": "Switch to the Reading tab",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "switch",
+      "tab": 1
+    },
+    {
+      "id": "switch-workspace",
+      "start_frame": 888,
+      "end_frame": 948,
+      "goal": "Switch to the Workspace tab",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "switch",
+      "tab": 2
+    },
+    {
+      "id": "switch-overview",
+      "start_frame": 948,
+      "end_frame": 1008,
+      "goal": "Switch back to the Overview tab",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "switch",
+      "tab": 0
+    },
+    {
+      "id": "loading",
+      "start_frame": 1008,
+      "end_frame": 1080,
+      "goal": "Show the loading star only while the selected page is busy",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "loading",
+      "tab": 0
+    },
+    {
+      "id": "downloads",
+      "start_frame": 1080,
+      "end_frame": 1164,
+      "goal": "Show readable download filenames and status",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "downloads",
+      "tab": 0
+    },
+    {
+      "id": "install",
+      "start_frame": 1164,
+      "end_frame": 1284,
+      "goal": "Explain install and restart in three short steps",
+      "narration_mode": "silent",
+      "voiceover": "",
+      "claim_ids": [],
+      "on_screen": [],
+      "visual_objects": [
+        {
+          "id": "zen",
+          "type": "video",
+          "asset_id": "native-zen"
+        }
+      ],
+      "assets": [
+        "native-zen"
+      ],
+      "animations": [],
+      "transition": "cut",
+      "audio": {
+        "voiceover_path": null,
+        "music_path": null,
+        "sfx": []
+      },
+      "qa": [
+        "Actual isolated Zen chrome; no personal profile"
+      ],
+      "kind": "install",
+      "tab": 0
+    }
+  ]
+}
