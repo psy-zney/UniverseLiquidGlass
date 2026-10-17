@@ -4,7 +4,11 @@ Vũ trụ thu nhỏ cho **Zen Browser**: nền đen sâu, sao trắng lấp lán
 
 [Tải bản cài đặt](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) · [Xem video demo](docs/media/theme-demo.mp4) · [English](docs/README.en.md)
 
-[![Universe Liquid Glass trên Zen](docs/media/preview.png)](docs/media/theme-demo.mp4)
+## Video demo
+
+https://github.com/user-attachments/assets/b9ad681a-715a-4570-aad6-3a52f168c637
+
+*53,5 giây: đủ 9 sự kiện vũ trụ, chuyển tab sidebar, loading và Downloads. [Tải MP4](docs/media/theme-demo.mp4) · [Phụ đề tiếng Việt](docs/media/theme-demo.vi.srt).*
 
 ## Có gì bên trong?
 

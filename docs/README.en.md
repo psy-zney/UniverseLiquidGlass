@@ -4,6 +4,12 @@ A deep black cosmic theme for Zen Browser: irregular twinkling stars, nine celes
 
 [Download](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) · [Native demo video](media/theme-demo.mp4) · [Tiếng Việt](../README.md)
 
+## Video demo
+
+https://github.com/user-attachments/assets/b9ad681a-715a-4570-aad6-3a52f168c637
+
+*53.5 seconds: all nine celestial events, sidebar tab switching, loading and Downloads. [Download MP4](media/theme-demo.mp4) · [Vietnamese subtitles](media/theme-demo.vi.srt).*
+
 ## Windows installation
 
 1. Download and extract the ZIP from Releases.
