@@ -1,0 +1,23 @@
+{
+  "name": "Universe Liquid Glass",
+  "description": "Deep black cosmic sidebar, liquid glass tabs and nine illuminated celestial events.",
+  "version": "1.0.0",
+  "author": "psy-zney",
+  "homepage": "https://github.com/psy-zney/UniverseLiquidGlass",
+  "type": "css",
+  "style": "chrome.css",
+  "readme": "readme.md",
+  "image": "preview.png",
+  "preferences": {},
+  "submissionStatus": "not_submitted",
+  "officialRepository": "https://github.com/zen-browser/theme-store",
+  "lastVerified": "2026-10-18",
+  "officialRepositoryArchived": true,
+  "notes": [
+    "This file is review-bundle metadata, not an official store-assigned theme record.",
+    "The official repository is archived; issue/PR submissions cannot be created there.",
+    "The style exceeds the GitHub issue-body limit; the legacy inline form cannot carry the complete CSS.",
+    "Website content rules in theme/userContent.css are optional manual-install extras and are not included in chrome.css.",
+    "The official store requires CC BY-NC-SA 4.0 for submitted themes. This project remains MIT; no store license change is made by preparing this bundle."
+  ]
+}

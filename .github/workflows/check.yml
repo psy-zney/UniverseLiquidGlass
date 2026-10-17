@@ -13,7 +13,8 @@ jobs:
       - name: Rebuild deterministic CSS
         run: |
           python scripts/build.py
-          git diff --exit-code -- theme/
+          python scripts/prepare-store.py
+          git diff --exit-code -- theme/ zen-mod/
       - name: Exercise install, update and uninstall in a temporary profile
         shell: powershell
         run: ./scripts/test-install.ps1

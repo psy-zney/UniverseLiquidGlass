@@ -86,7 +86,7 @@ Existing theme rules may override this theme. Back up your configuration and dis
 
 5. In `about:config`, set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`, then restart Zen.
 
-**Tested on Zen 1.23.2b / Windows.** Manual installation on macOS/Linux is documented but has not been tested directly. This is a local CSS theme; it has **not been submitted to the official Zen Mods store**.
+**Tested on Zen 1.23.2b / Windows.** Manual installation on macOS/Linux is documented but has not been tested directly. The [official Zen Mods repository is archived](https://github.com/zen-browser/theme-store), so this theme is **not yet submitted or listed**. A [review bundle and submission status](docs/zen-store-submission.md) are available; use Releases for installation in the meantime.
 
 ## Uninstall and restore
 
