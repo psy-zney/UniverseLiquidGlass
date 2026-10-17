@@ -1,9 +1,37 @@
 {
+  "id": "universe-liquid-glass",
   "name": "Universe Liquid Glass",
-  "version": "1.0.0",
+  "description": "Deep black cosmic sidebar, liquid glass tabs and nine illuminated celestial events.",
   "author": "psy-zney",
-  "repository": "https://github.com/psy-zney/UniverseLiquidGlass",
+  "version": "1.0.0",
+  "homepage": "https://github.com/psy-zney/UniverseLiquidGlass",
+  "style": {
+    "chrome": "theme/userChrome.css",
+    "content": "theme/userContent.css"
+  },
+  "readme": "https://raw.githubusercontent.com/psy-zney/UniverseLiquidGlass/main/README.md",
+  "image": "https://raw.githubusercontent.com/psy-zney/UniverseLiquidGlass/main/zen-mod/preview.png",
+  "tags": [
+    "theme",
+    "dark",
+    "cosmos",
+    "liquid-glass",
+    "minimal"
+  ],
+  "fork": [
+    "zen"
+  ],
   "testedZenVersion": "1.23.2b",
-  "style": ["deep black", "liquid glass", "cosmos"],
-  "events": ["comet", "star", "planet", "white dwarf", "black hole", "neutron star", "nebula", "blue star", "galaxy"]
+  "events": [
+    "comet",
+    "star",
+    "planet",
+    "white dwarf",
+    "black hole",
+    "neutron star",
+    "nebula",
+    "blue star",
+    "galaxy"
+  ]
 }
+
