@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-10-18
+
+- Wide cosmic backgrounds on internal new-tab, home, blank and private pages.
+- Optional Windows desktop wallpaper copied into a private local profile setting.
+- Glass browser frame, sidebar surfaces, address bar and native new-tab controls.
+- Stars and celestial events behind page content; ordinary websites keep their backgrounds.
+- Desktop-image settings are scoped to browser chrome and internal pages.
+
 ## 1.0.0 — 2026-10-17
 
 - Deep black star field with irregular white pinpoints and staggered twinkle.

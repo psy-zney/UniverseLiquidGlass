@@ -4,7 +4,7 @@
 
 ## Quick installation — Windows
 
-1. Download **UniverseLiquidGlass-v1.0.0.zip** from [Releases](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) and extract it.
+1. Download the latest **UniverseLiquidGlass ZIP** from [Releases](https://github.com/psy-zney/UniverseLiquidGlass/releases/latest) and extract it.
 2. If you have multiple Zen profiles, open `about:profiles` and note the intended profile's **Root Directory**.
 3. **Close Zen completely**, then run `install.cmd` from the extracted folder.
 4. Reopen Zen with the **Dark** appearance and expanded vertical tabs.
@@ -29,6 +29,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -ProfilePath "
 - Rejects a locked profile. Bookmarks, passwords, extensions and history are not modified.
 
 Existing theme rules may override this theme. Back up your configuration and disable conflicting theme imports if the appearance differs from the demo.
+
+### Use your current desktop wallpaper
+
+On Windows, install with the optional wallpaper setting:
+
+```powershell
+.\install.cmd -UseDesktopWallpaper -ProfilePath "C:\path\to\your\Zen\profile"
+```
+
+For an existing installation, run this from the extracted theme folder:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/use-desktop-wallpaper.ps1 -ProfilePath "C:\path\to\your\Zen\profile"
+```
+
+This copies the current desktop image into a **local profile setting** for the browser frame and internal new-tab/blank pages. Stars and celestial events appear above the image, beneath native controls. Normal websites retain their own backgrounds, and cannot read the wallpaper variable.
+
+The personal image is not included in this repository or downloaded from the Internet. Wallpaper changes are **not synchronized automatically**; run the command again after changing your desktop image, then restart Zen. Pass `-WallpaperPath "C:\path\to\image.jpg"` to the standalone script to select an image explicitly.
+
+Without a personal image, the theme uses its built-in dark star field. The uninstaller also removes the local wallpaper imports and managed setting.
 
 ## Manual installation — Windows, macOS and Linux
 

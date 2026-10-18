@@ -1,0 +1,43 @@
+/* A shared local wallpaper behind the frame and translucent browser surfaces. */
+:root { --cosmos-default-wallpaper: __DEFAULT_WALLPAPER__; }
+#main-window {
+  background-color: #020304 !important;
+  background-image: linear-gradient(#02030424,#0203044d),var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+#browser,#zen-main-app-wrapper,#zen-tabbox-wrapper,#tabbrowser-tabpanels {
+  background-color: transparent !important;
+}
+#zen-appcontent-wrapper { background-color: transparent !important; }
+#navigator-toolbox {
+  background-color: #02030455 !important;
+  background-image: linear-gradient(155deg,#03050888,#03050855),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  box-shadow: inset -1px 0 #ffffff14,12px 0 32px #00000024 !important;
+}
+#navigator-toolbox :is(#nav-bar,#zen-sidebar-top-buttons,#zen-sidebar-foot-buttons) {
+  background-color: #05070b59 !important;
+  backdrop-filter: blur(18px) saturate(110%) !important;
+}
+#zen-appcontent-navbar-wrapper { background-color: #02030450 !important; }
+.browserSidebarContainer {
+  background-color: #03050855 !important;
+  backdrop-filter: blur(18px) saturate(110%) !important;
+  box-shadow: inset 0 1px #ffffff24,0 10px 35px #00000066 !important;
+}
+#urlbar-background,#searchbar {
+  background: linear-gradient(125deg,#ffffff13,transparent 65%),#0b1019a8 !important;
+  border: 1px solid #e5ebf033 !important;
+  backdrop-filter: blur(24px) saturate(115%) !important;
+  box-shadow: inset 0 1px #ffffff24,0 6px 20px #00000035 !important;
+}
+#urlbar[open] #urlbar-background { background-color: #0b1019ed !important; }
+#navigator-toolbox :is(#tabs-newtab-button,#vertical-tabs-newtab-button) {
+  background: linear-gradient(125deg,#ffffff0d,transparent),#080c139e !important;
+  border: 1px solid #e5ebf01c !important;
+  backdrop-filter: blur(18px) !important;
+}

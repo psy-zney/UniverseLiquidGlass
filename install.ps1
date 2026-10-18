@@ -1,5 +1,5 @@
 [CmdletBinding(SupportsShouldProcess)]
-param([string]$ProfilePath)
+param([string]$ProfilePath,[switch]$UseDesktopWallpaper)
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'scripts\Profile.ps1')
 $zenProfile = Resolve-ZenProfile $ProfilePath
@@ -36,7 +36,9 @@ $prefs = Read-OptionalText $userJs
 $prefs = [regex]::Replace($prefs,'(?ms)^// BEGIN UniverseLiquidGlass\r?\n.*?^// END UniverseLiquidGlass\r?\n?','')
 $prefs += "`r`n// BEGIN UniverseLiquidGlass`r`nuser_pref(`"toolkit.legacyUserProfileCustomizations.stylesheets`", true);`r`n// END UniverseLiquidGlass`r`n"
 Write-Utf8 $userJs $prefs
-Write-Utf8 (Join-Path $managed 'install-state.json') (@{version='1.0.0';profile=$zenProfile;backup=$backup;installed=(Get-Date).ToString('o')} | ConvertTo-Json)
+if ($UseDesktopWallpaper) { & (Join-Path $PSScriptRoot 'scripts\use-desktop-wallpaper.ps1') -ProfilePath $zenProfile }
+$themeVersion=(Get-Content -LiteralPath (Join-Path $PSScriptRoot 'theme.json') -Raw | ConvertFrom-Json).version
+Write-Utf8 (Join-Path $managed 'install-state.json') (@{version=$themeVersion;profile=$zenProfile;backup=$backup;installed=(Get-Date).ToString('o')} | ConvertTo-Json)
 Write-Host ('Installed Universe Liquid Glass in: ' + $zenProfile)
 Write-Host ('Backup: ' + $backup)
 Write-Host 'Start Zen. Enable vertical tabs and the dark appearance for the intended look.'

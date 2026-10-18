@@ -21,6 +21,7 @@ https://github.com/user-attachments/assets/91497d1d-f244-4eb9-b1db-a82097c5d6c2
 - Stars, comets, planets, nebulae and black holes with moving light and simulated lensing.
 - Reflective glass tabs, a clear active state and animated loading highlights.
 - Cosmic sidebar and top frame, plus readable Downloads and Library panels.
+- Wallpaper across Zen and new tabs, with an optional local desktop-image setting.
 - Local CSS + SVG assets. No remote downloads during use.
 
 ## Install

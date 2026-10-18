@@ -47,5 +47,5 @@ function Write-Utf8 {
 
 function Remove-ThemeImport {
     param([string]$Text)
-    return [regex]::Replace($Text,'(?m)^[ \t]*@import url\("UniverseLiquidGlass/user(?:Chrome|Content)\.css"\); /\* UniverseLiquidGlass \*/\r?\n?','')
+    return [regex]::Replace($Text,'(?m)^[ \t]*@import url\("UniverseLiquidGlass/(?:userChrome|userContent|wallpaper)\.css"\); /\* UniverseLiquidGlass(?: wallpaper)? \*/\r?\n?','')
 }

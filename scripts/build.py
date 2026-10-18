@@ -70,6 +70,7 @@ def svg_url(body, view='0 0 420 1300'):
 
 from deep_space_assets import make_assets
 from cosmic_events import make_event_assets,make_timeline
+from wallpaper_assets import make_wallpaper_assets
 assets=make_assets(svg_url,Random(101726))
 events=make_event_assets(assets,svg_url)
 assets.update(make_timeline(events))
@@ -78,9 +79,19 @@ for key,value in assets.items(): sidebar=sidebar.replace('__'+key+'__',value)
 base=(ROOT/'src/browser-base.css').read_text(encoding='utf-8')
 ui=(ROOT/'src/ui.css').read_text(encoding='utf-8').replace('__TOP_EVENT_CSS__',make_timeline(events,top=True))
 css=base.replace('__SIDEBAR__',sidebar)+ui
+wallpaper_assets=make_wallpaper_assets(svg_url)
+wallpaper=(ROOT/'src/wallpaper-chrome.css').read_text(encoding='utf-8')
+newtab=(ROOT/'src/newtab.css').read_text(encoding='utf-8')
+scene=make_timeline(events)
+for key,value in {**wallpaper_assets,**{'SCENE_'+k.removeprefix('EVENT_'):v for k,v in scene.items()}}.items():
+    wallpaper=wallpaper.replace('__'+key+'__',value)
+    newtab=newtab.replace('__'+key+'__',value)
+css+=wallpaper
 css=black_palette(re.sub(r'\n{4,}','\n\n',css))
 if re.search(r'__[A-Z_]+__',css): raise RuntimeError('Unresolved CSS template')
 (ROOT/'theme').mkdir(exist_ok=True)
 (ROOT/'theme/userChrome.css').write_text(css,encoding='utf-8')
-(ROOT/'theme/userContent.css').write_text((ROOT/'src/content.css').read_text(encoding='utf-8'),encoding='utf-8')
+content=(ROOT/'src/content.css').read_text(encoding='utf-8')+'\n'+newtab
+if re.search(r'__[A-Z_]+__',content): raise RuntimeError('Unresolved content CSS template')
+(ROOT/'theme/userContent.css').write_text(content,encoding='utf-8')
 print('Built theme/userChrome.css and theme/userContent.css')

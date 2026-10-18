@@ -12,7 +12,7 @@ assert len(name)<25 and len(description)<100
 style=ROOT/'theme/userChrome.css'
 shutil.copyfile(style,OUT/'chrome.css')
 metadata={
-    'name':name,'description':description,'version':'1.0.0','author':'psy-zney',
+    'name':name,'description':description,'version':json.loads((ROOT/'theme.json').read_text(encoding='utf-8'))['version'],'author':'psy-zney',
     'homepage':'https://github.com/psy-zney/UniverseLiquidGlass',
     'type':'css','style':'chrome.css','readme':'readme.md','image':'preview.png',
     'preferences':{},'submissionStatus':'not_submitted',
