@@ -10,11 +10,13 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
+**Latest: [v1.1.1 — Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.1)** — translucent suggestions, clearer keyboard selection and a unified glass search palette.
+
 ## Video demo
 
 https://github.com/user-attachments/assets/91497d1d-f244-4eb9-b1db-a82097c5d6c2
 
-*54 seconds · 9 celestial events · 2.3× detail shots · sidebar tab switching*
+*54 seconds · 9 celestial events · 2.3× detail shots · sidebar tab switching. Earlier footage; wallpaper and glass search arrived in v1.1.*
 
 ## Features
 
@@ -31,6 +33,8 @@ https://github.com/user-attachments/assets/91497d1d-f244-4eb9-b1db-a82097c5d6c2
 3. Use **Dark** appearance and expanded vertical tabs.
 
 Existing CSS is backed up. Run `uninstall.cmd` to remove the theme.
+
+Use your current Windows desktop image: `.\install.cmd -UseDesktopWallpaper`. The image stays local; restart Zen after applying.
 
 [Multiple profiles, manual setup & customization →](INSTALLATION.md)
 
