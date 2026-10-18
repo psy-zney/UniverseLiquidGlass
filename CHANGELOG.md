@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 2026-10-18
+
+- Floating liquid glass search palette with translucent results and reflective borders.
+- Updated selectors for Zen's current native search container and background.
+- Readable result titles, muted URLs, clear keyboard selection and scrollable suggestions.
+- Transparent input surface, reduced-transparency fallback and reduced-motion support.
+
 ## 1.1.0 — 2026-10-18
 
 - Wide cosmic backgrounds on internal new-tab, home, blank and private pages.

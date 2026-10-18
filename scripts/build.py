@@ -87,6 +87,7 @@ for key,value in {**wallpaper_assets,**{'SCENE_'+k.removeprefix('EVENT_'):v for 
     wallpaper=wallpaper.replace('__'+key+'__',value)
     newtab=newtab.replace('__'+key+'__',value)
 css+=wallpaper
+css+=(ROOT/'src/search.css').read_text(encoding='utf-8')
 css=black_palette(re.sub(r'\n{4,}','\n\n',css))
 if re.search(r'__[A-Z_]+__',css): raise RuntimeError('Unresolved CSS template')
 (ROOT/'theme').mkdir(exist_ok=True)
