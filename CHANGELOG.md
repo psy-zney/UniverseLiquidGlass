@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.2 — 2026-10-19
+
+- Sidebar wallpaper now crops to the sidebar instead of the full viewport, keeping its focal subject visible.
+- Lighter overlays behind glass controls and a matching wallpaper on the Library icon rail.
+- Configurable sidebar focal position through `--cosmos-sidebar-wallpaper-position` (default: `56% center`).
+- Verified in native Zen 1.23.3b on Windows.
+
 ## 1.1.1 — 2026-10-18
 
 - Floating liquid glass search palette with translucent results and reflective borders.

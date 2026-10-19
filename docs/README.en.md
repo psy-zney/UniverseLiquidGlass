@@ -10,7 +10,7 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.1 — Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.1)** — translucent suggestions, clearer keyboard selection and a unified glass search palette.
+**Latest: [v1.1.2 — Sidebar Wallpaper](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.2)** — clearer wallpaper behind glass tabs and the Library icon rail.
 
 ## Video demo
 
@@ -40,6 +40,6 @@ Use your current Windows desktop image: `.\install.cmd -UseDesktopWallpaper`. Th
 
 ---
 
-Tested on **Zen 1.23.2b / Windows**. macOS/Linux untested. [Zen Mods submission status](zen-store-submission.md).
+Tested on **Zen 1.23.3b / Windows**. macOS/Linux untested. [Zen Mods submission status](zen-store-submission.md).
 
 [Tiếng Việt](README.vi.md) · [MIT](../LICENSE) · [psy-zney](https://github.com/psy-zney)

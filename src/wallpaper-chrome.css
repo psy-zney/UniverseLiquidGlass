@@ -1,5 +1,8 @@
 /* A shared local wallpaper behind the frame and translucent browser surfaces. */
-:root { --cosmos-default-wallpaper: __DEFAULT_WALLPAPER__; }
+:root {
+  --cosmos-default-wallpaper: __DEFAULT_WALLPAPER__;
+  --cosmos-sidebar-wallpaper-position: 56% center;
+}
 #main-window {
   background-color: #020304 !important;
   background-image: linear-gradient(#02030424,#0203044d),var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
@@ -12,15 +15,16 @@
 }
 #zen-appcontent-wrapper { background-color: transparent !important; }
 #navigator-toolbox {
-  background-color: #02030455 !important;
-  background-image: linear-gradient(155deg,#03050888,#03050855),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
-  background-position: center !important;
+  background-color: #0203041a !important;
+  background-image: linear-gradient(155deg,#03050833,#03050855),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
+  background-position: center,center,var(--cosmos-sidebar-wallpaper-position) !important;
   background-size: cover !important;
-  background-attachment: fixed !important;
+  /* Crop the image to the sidebar itself: fixed previously exposed only the dark screen edge. */
+  background-attachment: scroll !important;
   box-shadow: inset -1px 0 #ffffff14,12px 0 32px #00000024 !important;
 }
 #navigator-toolbox :is(#nav-bar,#zen-sidebar-top-buttons,#zen-sidebar-foot-buttons) {
-  background-color: #05070b59 !important;
+  background-color: #05070b33 !important;
   backdrop-filter: blur(18px) saturate(110%) !important;
 }
 #zen-appcontent-navbar-wrapper { background-color: #02030450 !important; }
@@ -40,4 +44,14 @@
   background: linear-gradient(125deg,#ffffff0d,transparent),#080c139e !important;
   border: 1px solid #e5ebf01c !important;
   backdrop-filter: blur(18px) !important;
+}
+
+/* Keep the wallpaper visible on the Library icon rail when the side panel opens. */
+#zen-library-side {
+  background-color: #030508 !important;
+  background-image: linear-gradient(180deg,#03050855,#03050888),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
+  background-position: center,center,var(--cosmos-sidebar-wallpaper-position) !important;
+  background-size: cover !important;
+  background-attachment: scroll !important;
+  border-inline-end: 1px solid #ffffff14 !important;
 }
