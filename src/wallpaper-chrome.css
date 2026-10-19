@@ -23,6 +23,11 @@
   background-attachment: scroll !important;
   box-shadow: inset -1px 0 #ffffff14,12px 0 32px #00000024 !important;
 }
+/* Compact hover adds a separate acrylic background above the toolbox wallpaper.
+   The toolbox already owns the sky and shadow; keep that decorative layer hidden. */
+#navigator-toolbox .zen-toolbar-background {
+  display: none !important;
+}
 #navigator-toolbox :is(#nav-bar,#zen-sidebar-top-buttons,#zen-sidebar-foot-buttons) {
   background-color: #05070b33 !important;
   backdrop-filter: blur(18px) saturate(110%) !important;

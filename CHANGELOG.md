@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.5 — 2026-10-19
+
+- Hide Zen's extra decorative compact-sidebar background so its acrylic layer cannot cover the theme wallpaper.
+- Keep the toolbox wallpaper, glass controls, star animations and five-row search layout.
+
 ## 1.1.4 — 2026-10-19
 
 - Keep the floating search palette compact with five visible standard rows.
