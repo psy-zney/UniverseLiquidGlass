@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.6 — 2026-10-19
+
+- Reduce the open search surface tint to 22% opacity and soften the full-palette blur.
+- Match result cards to tab glass: reflective gradients, brighter borders and inset highlights.
+- Add text shadows and brighter URLs, plus an opaque reduced-transparency fallback.
+- Preserve the centered layout, five-row limit and keyboard scrolling.
+
 ## 1.1.5 — 2026-10-19
 
 - Hide Zen's extra decorative compact-sidebar background so its acrylic layer cannot cover the theme wallpaper.

@@ -10,7 +10,7 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.5 — Compact Sidebar Wallpaper](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.5)** — keeps the wallpaper visible when the auto-hiding sidebar opens; search stays centered with five visible suggestions.
+**Latest: [v1.1.6 — Clear Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.6)** — clearer search glass with the same reflective edges as tabs; centered with five visible suggestions.
 
 ## Video demo
 
