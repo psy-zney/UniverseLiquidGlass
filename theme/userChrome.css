@@ -1492,9 +1492,9 @@ zen-library-downloads-section .zen-library-row:hover .zen-library-download-url {
 }
 #urlbar .urlbarView { margin-inline: 10px !important; width: calc(100% - 20px) !important; }
 #urlbar .urlbarView-body-outer { border-top: 1px solid #ffffff12 !important; }
-/* One scroll container: nested height caps previously hid most suggestions. */
+/* Keep the palette compact: five standard rows, with the remaining results scrollable. */
 #urlbar #urlbar-results {
-  max-height: calc(100dvh - 156px) !important;
+  max-height: min(264px,calc(100dvh - 156px)) !important;
   min-height: 0 !important;
   box-sizing: border-box !important;
   overflow-y: auto !important;

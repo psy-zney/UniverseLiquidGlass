@@ -10,7 +10,7 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.3 — Centered Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.3)** — a clearer glass palette, centered layout and more visible suggestions.
+**Latest: [v1.1.4 — Compact Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.4)** — a centered glass palette with five visible suggestions and scrolling for the rest.
 
 ## Video demo
 

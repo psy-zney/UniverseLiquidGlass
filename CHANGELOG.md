@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.4 — 2026-10-19
+
+- Keep the floating search palette compact with five visible standard rows.
+- Preserve centered glass styling and scrolling for remaining suggestions.
+
 ## 1.1.3 — 2026-10-19
 
 - Center the complete floating search palette as suggestions grow or shrink.
