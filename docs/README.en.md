@@ -10,7 +10,7 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.2 — Sidebar Wallpaper](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.2)** — clearer wallpaper behind glass tabs and the Library icon rail.
+**Latest: [v1.1.3 — Centered Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.3)** — a clearer glass palette, centered layout and more visible suggestions.
 
 ## Video demo
 

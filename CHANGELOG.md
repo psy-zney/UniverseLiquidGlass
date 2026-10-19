@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.3 — 2026-10-19
+
+- Center the complete floating search palette as suggestions grow or shrink.
+- More transparent dark glass, brighter edge reflections and clearer URL text.
+- Replace nested result height limits with one scrollable list that fits the window.
+- Compact suggestion rows; all returned results remain accessible by scrolling.
+
 ## 1.1.2 — 2026-10-19
 
 - Sidebar wallpaper now crops to the sidebar instead of the full viewport, keeping its focal subject visible.
