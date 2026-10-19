@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.8 — 2026-10-19
+
+- Align the search input and results without overlap or drawing beyond the rounded frame.
+- Fit exactly five standard result rows using consistent row heights and gaps.
+- Snap scrolling to rows so the list does not stop on a cut-off suggestion.
+- Preserve glass styling, keyboard navigation and native text editing.
+- Document an optional inline-autofill workaround for duplicated Vietnamese text with EVKey/UniKey.
+
 ## 1.1.7 — 2026-10-19
 
 - Restore an opaque starfield sidebar, independent of the frame/new-tab wallpaper.

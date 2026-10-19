@@ -10,7 +10,7 @@
   <a href="INSTALLATION.md"><img src="media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.7 — Starfield Sidebar](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.7)** — restores the starfield sidebar, keeps black holes outside it, and includes compact 640px glass search.
+**Latest: [v1.1.8 — Search Layout Fix](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.8)** — fixes input sizing and clipped suggestions in the centered 640px glass search palette.
 
 ## Video demo
 

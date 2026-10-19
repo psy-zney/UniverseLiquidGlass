@@ -82,6 +82,12 @@ The uninstaller removes managed imports and theme files while preserving unrelat
 
 For a manual installation, remove the two imports and `chrome/UniverseLiquidGlass/`. To restore the exact previous configuration, use the backed-up files while Zen is closed.
 
+## Vietnamese input (EVKey / UniKey)
+
+If typing `dd` produces `dđ` or accented letters are duplicated in the address bar, try setting `browser.urlbar.autoFill` to `false` in `about:config`. This disables inline completion in the input while retaining dropdown suggestions. Reset the preference to restore inline completion.
+
+This is a workaround for a [reported Firefox/Zen input conflict](https://bugzilla.mozilla.org/show_bug.cgi?id=1982340), separate from the CSS theme. It is optional and is not automatically applied by the theme installer. The replacement sequence was reproduced in an isolated native Zen profile; actual OS-level Telex input still needs confirmation on the affected machine.
+
 ## Customize and build
 
 ```text
