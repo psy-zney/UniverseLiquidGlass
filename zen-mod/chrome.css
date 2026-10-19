@@ -1389,6 +1389,9 @@ zen-library-downloads-section .zen-library-row:hover .zen-library-download-url {
   background-position: center !important;
   background-attachment: fixed !important;
 }
+/* The root owns the cosmic frame. Zen's generated color layer can otherwise
+   cover it with a pale tint, including in compact mode. */
+#zen-browser-background { display: none !important; }
 #browser,#zen-main-app-wrapper,#zen-tabbox-wrapper,#tabbrowser-tabpanels {
   background-color: transparent !important;
 }
@@ -1411,11 +1414,16 @@ zen-library-downloads-section .zen-library-row:hover .zen-library-download-url {
   background-color: #05070b33 !important;
   backdrop-filter: blur(18px) saturate(110%) !important;
 }
-#zen-appcontent-navbar-wrapper { background-color: #02030450 !important; }
+#zen-appcontent-navbar-wrapper { background-color: #020304e6 !important; }
 .browserSidebarContainer {
   background-color: #03050855 !important;
   backdrop-filter: blur(18px) saturate(110%) !important;
-  box-shadow: inset 0 1px #ffffff24,0 10px 35px #00000066 !important;
+  box-shadow: inset 0 1px #ffffff0d,0 10px 35px #00000066 !important;
+}
+/* A subtle page edge, independent of the brighter tab/search glass borders. */
+.browserSidebarContainer,
+.browserSidebarContainer.deck-selected {
+  border-color: #ffffff14 !important;
 }
 #urlbar-background,#searchbar {
   background: linear-gradient(125deg,#ffffff13,transparent 65%),#0b1019a8 !important;
