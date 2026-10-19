@@ -1,7 +1,6 @@
 /* A shared local wallpaper behind the frame and translucent browser surfaces. */
 :root {
   --cosmos-default-wallpaper: __DEFAULT_WALLPAPER__;
-  --cosmos-sidebar-wallpaper-position: 56% center;
 }
 #main-window {
   background-color: #020304 !important;
@@ -17,17 +16,12 @@
   background-color: transparent !important;
 }
 #zen-appcontent-wrapper { background-color: transparent !important; }
+/* Keep the sidebar's opaque star field from sidebar.css. Wallpaper belongs to
+   the main frame and internal pages, never to the tab sidebar. */
 #navigator-toolbox {
-  background-color: #0203041a !important;
-  background-image: linear-gradient(155deg,#03050833,#03050855),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
-  background-position: center,center,var(--cosmos-sidebar-wallpaper-position) !important;
-  background-size: cover !important;
-  /* Crop the image to the sidebar itself: fixed previously exposed only the dark screen edge. */
-  background-attachment: scroll !important;
   box-shadow: inset -1px 0 #ffffff14,12px 0 32px #00000024 !important;
 }
-/* Compact hover adds a separate acrylic background above the toolbox wallpaper.
-   The toolbox already owns the sky and shadow; keep that decorative layer hidden. */
+/* The toolbox owns its sky in both expanded and compact hover states. */
 #navigator-toolbox .zen-toolbar-background {
   display: none !important;
 }
@@ -59,11 +53,11 @@
   backdrop-filter: blur(18px) !important;
 }
 
-/* Keep the wallpaper visible on the Library icon rail when the side panel opens. */
+/* The Library icon rail also keeps a star field without the page wallpaper. */
 #zen-library-side {
   background-color: #030508 !important;
-  background-image: linear-gradient(180deg,#03050855,#03050888),__AMBIENT_STARS__,var(--cosmos-wallpaper,var(--cosmos-default-wallpaper)) !important;
-  background-position: center,center,var(--cosmos-sidebar-wallpaper-position) !important;
+  background-image: __AMBIENT_STARS__ !important;
+  background-position: center !important;
   background-size: cover !important;
   background-attachment: scroll !important;
   border-inline-end: 1px solid #ffffff14 !important;

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.7 — 2026-10-19
+
+- Restore an opaque starfield sidebar, independent of the frame/new-tab wallpaper.
+- Remove the sidebar black-hole visitor while keeping the other eight visitors and star twinkle.
+- Keep Library navigation free of page wallpaper in expanded and compact states.
+- Include the compact 640px search palette and dark browser frame with subtle page edges.
+
 ## 1.1.6 — 2026-10-19
 
 - Reduce the open search surface tint to 22% opacity and soften the full-palette blur.

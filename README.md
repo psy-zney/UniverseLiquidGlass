@@ -10,7 +10,7 @@
   <a href="docs/INSTALLATION.md"><img src="docs/media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.6 — Clear Glass Search](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.6)** — clearer search glass with the same reflective edges as tabs; centered with five visible suggestions.
+**Latest: [v1.1.7 — Starfield Sidebar](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.7)** — restores the starfield sidebar, keeps black holes outside it, and includes compact 640px glass search.
 
 ## Video demo
 
@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/91497d1d-f244-4eb9-b1db-a82097c5d6c2
 - Stars, comets, planets, nebulae and black holes with moving light and simulated lensing.
 - Reflective glass tabs, a floating glass search palette and clear active/loading states.
 - Cosmic sidebar and top frame, plus readable Downloads and Library panels.
-- Wallpaper across Zen and new tabs, with an optional local desktop-image setting.
+- Wallpaper on the Zen frame and new tabs; an independent starfield sidebar. Optional local desktop image.
 - Local CSS + SVG assets. No remote downloads during use.
 
 ## Install

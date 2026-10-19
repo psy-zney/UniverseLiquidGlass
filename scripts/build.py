@@ -73,7 +73,8 @@ from cosmic_events import make_event_assets,make_timeline
 from wallpaper_assets import make_wallpaper_assets
 assets=make_assets(svg_url,Random(101726))
 events=make_event_assets(assets,svg_url)
-assets.update(make_timeline(events))
+# Keep black holes on the top frame and internal pages, outside the sidebar.
+assets.update(make_timeline({**events, 'HOLE': 'none'}))
 sidebar=(ROOT/'src/sidebar.css').read_text(encoding='utf-8')
 for key,value in assets.items(): sidebar=sidebar.replace('__'+key+'__',value)
 base=(ROOT/'src/browser-base.css').read_text(encoding='utf-8')
