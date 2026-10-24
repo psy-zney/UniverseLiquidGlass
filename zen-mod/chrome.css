@@ -1369,6 +1369,14 @@ zen-library-downloads-section .zen-library-row:hover .zen-library-download-url {
 #ContentSelectDropdownPopup::part(content) { background: #ffffff !important; color: #111827 !important; }
 #ContentSelectDropdownPopup :is(menuitem,menucaption) { color: #111827 !important; background-color: #ffffff !important; }
 #ContentSelectDropdownPopup menuitem[_moz-menuactive="true"] { background: #dbeafe !important; color: #102447 !important; }
+/* Native menu rows own their colors; their child labels must inherit them.
+   The generic dark-popup label rule otherwise paints white text on this white list. */
+#ContentSelectDropdownPopup :is(menuitem,menucaption) :is(label,description,span) {
+  color: inherit !important;
+  text-shadow: none !important;
+}
+#ContentSelectDropdownPopup menuitem[disabled="true"] { color: #5a6576 !important; }
+
 
 @media (prefers-reduced-motion: reduce) {
   #navigator-toolbox::before { animation-duration: 14s !important; }

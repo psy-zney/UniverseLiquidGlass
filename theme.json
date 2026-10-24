@@ -3,7 +3,7 @@
   "name": "Universe Liquid Glass",
   "description": "Deep black cosmic sidebar, liquid glass tabs and nine illuminated celestial events.",
   "author": "psy-zney",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "homepage": "https://github.com/psy-zney/UniverseLiquidGlass",
   "style": {
     "chrome": "theme/userChrome.css",
@@ -21,7 +21,7 @@
   "fork": [
     "zen"
   ],
-  "testedZenVersion": "1.23.3b",
+  "testedZenVersion": "1.23.4b",
   "events": [
     "comet",
     "star",

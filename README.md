@@ -10,7 +10,7 @@
   <a href="docs/INSTALLATION.md"><img src="docs/media/buttons/guide.svg" alt="Install guide" width="164" height="44"></a>
 </p>
 
-**Latest: [v1.1.8 — Search Layout Fix](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.8)** — fixes input sizing and clipped suggestions in the centered 640px glass search palette.
+**Latest: [v1.1.9 — Readable Select Menus](https://github.com/psy-zney/UniverseLiquidGlass/releases/tag/v1.1.9)** — fixes white-on-white text in native webpage select menus, including selected and disabled options.
 
 ## Video demo
 
@@ -40,6 +40,6 @@ Use your current Windows desktop image: `.\install.cmd -UseDesktopWallpaper`. Th
 
 ---
 
-Tested on **Zen 1.23.3b / Windows**. macOS/Linux untested. [Zen Mods submission status](docs/zen-store-submission.md).
+Tested on **Zen 1.23.4b / Windows**. macOS/Linux untested. [Zen Mods submission status](docs/zen-store-submission.md).
 
 [Tiếng Việt](docs/README.vi.md) · [MIT](LICENSE) · [psy-zney](https://github.com/psy-zney)

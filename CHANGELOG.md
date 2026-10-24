@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.9 — 2026-10-24
+
+- Fix native webpage select labels that were forced white by the generic dark-menu rule.
+- Make labels inherit the option row foreground for normal, active and grouped entries.
+- Give disabled options a readable muted foreground on the light popup.
+- Verified against native select popups in Zen 1.23.4b on Windows.
+
 ## 1.1.8 — 2026-10-19
 
 - Align the search input and results without overlap or drawing beyond the rounded frame.
